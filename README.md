@@ -10,5 +10,5 @@ Now, add the site to vhosts or add a new site in DevDesktop
 
 Then
 $ cd docroot
-$ drush si standard --site-name="Demo site" --account-pass=demo --config-dir=../config
+$ drush si standard --site-name="Demo site" --account-pass=demo --config-dir=../config/sync
 $ drush en -y site_core
