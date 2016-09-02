@@ -8,6 +8,7 @@ distribution:
   name: Standard
 
 dependencies:
+  - diff
   - boxout
   - sharerich
   - captcha_keypad
