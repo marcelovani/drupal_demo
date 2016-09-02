@@ -1,0 +1,3 @@
+allowed_html: '<a> <b> <br> <dd> <dl> <dt> <em> <i> <li> <ol> <p> <strong> <u> <ul> <span> <div> <path> <svg>'
+_core:
+  default_config_hash: '-kLvmq-bIuzXPh8lFprMZNbP73Eg3b08fAp-kZtlxgE'

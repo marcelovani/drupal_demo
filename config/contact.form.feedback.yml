@@ -1,0 +1,12 @@
+uuid: c62b7cdb-5376-4411-a38e-00c472b2af5c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - marcellovani@gmail.com
+reply: ''
+weight: 0
