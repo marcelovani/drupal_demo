@@ -1,0 +1,13 @@
+name: Site Core
+type: module
+description: 'Site Core.'
+version: VERSION
+core: 8.x
+
+distribution:
+  name: Standard
+
+dependencies:
+  - boxout
+  - sharerich
+  - captcha_keypad

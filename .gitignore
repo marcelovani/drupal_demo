@@ -1,0 +1,20 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/*settings*.php
+
+# Ignore paths that contain generated content.
+files/
+sites/*/files
+sites/*/private
+
+# Core
+vendor
+docroot/core
+docroot/modules/contrib
+docroot/theme/contrib
+
+# IDE/System folders
+.idea
+.DS_Store
+
+# Temporarily excluding this until we have a definitive file to commit on the repo
+composer.lock
