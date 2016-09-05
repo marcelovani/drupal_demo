@@ -1,4 +1,4 @@
-uuid: 87b114a9-a88a-4541-956f-f58d8225f62c
+uuid: b01788b6-195a-45ab-a634-d4a32fa43dac
 langcode: en
 status: true
 dependencies:
@@ -50,7 +50,10 @@ settings:
           items:
             - ShowBlocks
             - Source
+            - Boxout
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
 image_upload:
@@ -59,5 +62,5 @@ image_upload:
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

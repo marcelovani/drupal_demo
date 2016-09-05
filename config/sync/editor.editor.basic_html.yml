@@ -1,4 +1,4 @@
-uuid: 6c20408b-2bea-4e48-98b8-679f1dc018e8
+uuid: 6252d5c7-f844-44c3-b86b-524eee94f7fa
 langcode: en
 status: true
 dependencies:
@@ -42,7 +42,10 @@ settings:
           name: Tools
           items:
             - Source
+            - Boxout
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
 image_upload:
@@ -51,5 +54,5 @@ image_upload:
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
