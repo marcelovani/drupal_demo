@@ -33,6 +33,9 @@
           "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {
+            "drupal/core": {
+                "Allow installing new sites with exported configuration": "https://www.drupal.org/files/issues/1613424-2-71.patch"
+            }
         }
     },
 
