@@ -104,7 +104,7 @@
         "drupal/ctools": "3.x-dev",
         "drupal/admin_menu": "3.x-dev",
         "drupal/panels": "3.x-dev",
-        "drupal/libraries": "3.x-dev"
+        "drupal/libraries": "3.x-dev",
         "drupal/google_analytics": "2.x-dev",
         "drupal/ctools": "3.x-dev",
         "drupal/token": "1.x-dev",
