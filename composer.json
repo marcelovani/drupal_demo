@@ -48,10 +48,18 @@
         "cweagans/composer-patches": "^1.5.0",
         "composer/installers": "^1.0",
         "drupal/core": "^8.1.0",
-        "drupal/ctools": "3.0-alpha26",
+        "drupal/webform": "3.x-dev",
+        "drupal/ctools": "3.x-dev",
+        "drupal/admin_menu": "3.x-dev",
+        "drupal/libraries": "3.x-dev",
         "drupal/config_update": "^1.1",
         "drupal/captcha_keypad": "^1.0",
         "drupal/sharerich": "^1.0",
-        "drupal/boxout": "^1.0"
+        "drupal/boxout": "^1.0",
+        "drupal/token": "1.x-dev",
+        "drupal/imce": "1.x-dev",
+        "drupal/entity": "1.x-dev",
+        "drupal/pathauto": "1.x-dev",
+        "drupal/google_analytics": "2.x-dev"
     }
 }
