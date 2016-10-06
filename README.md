@@ -1,5 +1,5 @@
 # drupal_demo
-Demo site for contrib modules
+Demo site for my contrib modules
 
 Installation
 ============
