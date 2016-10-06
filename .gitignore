@@ -8,9 +8,9 @@ sites/*/private
 
 # Core
 vendor
-docroot/core
-docroot/modules/contrib
-docroot/theme/contrib
+web/core
+web/modules/contrib
+web/theme/contrib
 
 # IDE/System folders
 .idea
