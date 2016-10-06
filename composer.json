@@ -59,6 +59,7 @@
         "drupal/pathauto": "1.x-dev",
         "drupal/google_analytics": "2.x-dev",
         "drupal/ctools": "3.x-dev",
-        "drupal/token": "1.x-dev"
+        "drupal/token": "1.x-dev",
+        "drupal/simplify": "^1.0"
     }
 }
