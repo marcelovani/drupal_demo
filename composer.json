@@ -54,6 +54,8 @@
         "drupal/boxout": "^1.0",
         "drupal/ctools": "3.x-dev",
         "drupal/admin_menu": "3.x-dev",
-        "drupal/token": "1.x-dev"
+        "drupal/token": "1.x-dev",
+        "symfony/filesystem": "~2.8",
+        "drupal/console": "~1.0"
     }
 }
