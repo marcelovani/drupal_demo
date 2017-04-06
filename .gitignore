@@ -1,20 +1,44 @@
 # Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
+# sites/*/*settings*.php
 
 # Ignore paths that contain generated content.
 files/
 sites/*/files
 sites/*/private
+web/themes/custom/**/dist/css
+web/themes/custom/**/dist/js
+.sass-cache
+node_modules
+npm-debug.log
+phpunit.xml
+behat.yml
 
 # Core
 vendor
+web/.*
+web/autoload.php
+web/index.php
+web/profiles
+web/robots.txt
+web/sites
+!web/sites/default/settings.php
+!web/sites/default/services.yml
+!web/sites/all/drush
+web/update.php
+web/web.config
 web/core
 web/modules/contrib
-web/theme/contrib
+web/modules/custom
+web/themes/contrib
 
 # IDE/System folders
 .idea
 .DS_Store
+node_modules
 
-# Temporarily excluding this until we have a definitive file to commit on the repo
-composer.lock
+# Dev settings
+devel.settings.yml
+devel.toolbar.settings.yml
+system.menu.devel.yml
+webprofiler.config.yml
+
