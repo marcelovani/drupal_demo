@@ -25,3 +25,5 @@ The destination dir defaults to ./web
 Install the site
 `cd [destination dir]`
 `sh ../scripts/install.sh`
+
+Unassisted build
