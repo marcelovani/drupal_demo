@@ -5,6 +5,7 @@ Prerequisites
 
 - Git
 - Drush
+- PHP <= 5.6
 
 ## Installation
 
