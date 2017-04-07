@@ -18,5 +18,10 @@ Copy and paste this into your shell to install everything:
 Go inside the distro folder
 `cd drupal_demo`
 
-Run install
-`./install.sh /var/www/drupal_demo`
+Build the site
+`sh scripts/build.sh [destination dir]`
+The destination dir defaults to ./web
+
+Install the site
+`cd [destination dir]`
+`sh ../scripts/install.sh`

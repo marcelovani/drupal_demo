@@ -32,4 +32,4 @@ projects[wysiwyg_smart_paging_seo][subdir] = contrib
 projects[wysiwyg_smart_paging_seo][version] = 1.2
 
 projects[context_admin_exclude][subdir] = contrib
-projects[context_admin_exclude][version] = 7.x
+projects[context_admin_exclude][version] = 1.x-dev
