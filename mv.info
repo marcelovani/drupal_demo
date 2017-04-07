@@ -1,0 +1,56 @@
+; $Id $
+name = Drupal Demo
+description = Demo of my contrib modules
+core = 7.x
+
+; Core
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = syslog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+
+; Contrib
+dependencies[] = addthis
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = features_override
+dependencies[] = googleanalytics
+dependencies[] = nodequeue
+dependencies[] = omega_tools
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = views
+dependencies[] = views_content
+dependencies[] = views_ui
+dependencies[] = wysiwyg
+dependencies[] = xmlsitemap
+dependencies[] = libraries
+
+
+; mv
+;dependencies[] = mv_article
+
+libraries[ckeditor][download][type] = get
+libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.5/ckeditor_3.5.tar.gz
+libraries[colorbox][download][type] = get
+libraries[colorbox][download][url] = http://colorpowered.com/colorbox/colorbox.zip
