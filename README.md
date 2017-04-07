@@ -7,10 +7,8 @@ Prerequisites
 - Drush
 - PHP <= 5.6
 
-## Installation
-
-- Go to a temporary folder
-`cd /tmp`
+## Building
+This installation will install the site on a directory called drupal_demo.
 
 - Copy and paste this into your shell to install everything:
 `curl -L -s https://goo.gl/1yuiCj | bash`
@@ -22,10 +20,12 @@ Prerequisites
 `sh scripts/build.sh [destination dir]`
 The destination dir defaults to ./web
 
-- Install the site
-`cd [destination dir]`
-`sh ../scripts/install.sh`
-
 ## Unassisted build
 `curl -L https://goo.gl/6WdRoF | bash`
 This script will automatically build the site on `drupal_demo` folder
+
+## Install the site
+`cd [destination dir]`
+`sh ../scripts/install.sh`
+ps: If you are using DevDesktop, it will configure the settings.php for you when you add a new site.
+All you have to do is run `drush si`
