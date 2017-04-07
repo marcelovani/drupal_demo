@@ -23,5 +23,3 @@ f_install_drush
 f_install_site
 
 echo Done
-
-
