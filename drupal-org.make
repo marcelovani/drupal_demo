@@ -1,3 +1,5 @@
+; drush make -y --no-core --contrib-destination=. drupal-org.make
+
 api = 2
 includes[] = drupal-org-contrib.make
 

@@ -28,4 +28,4 @@ This script will automatically build the site on `drupal_demo` folder
 `cd [destination dir]`
 `sh ../scripts/install.sh`
 ps: If you are using DevDesktop, it will configure the settings.php for you when you add a new site.
-All you have to do is run `drush si`
+All you have to do is run `drush si -y drupal_demo --site-name="Drupal demo" --account-name=admin --account-pass=demo`
