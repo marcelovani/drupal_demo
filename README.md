@@ -11,15 +11,15 @@ Installation
 
 - Then:
 
-`cd web/sites/default`
+`cd web/sites/default;`
 
-`chmod 777 ../default`
+`chmod 777 ../default;`
 
-`chmod 777 settings.php`
+`chmod 777 settings.php;`
 
 Install the site
 
-`drush si -y standard --site-name="Demo site" --account-pass=demo`
+`drush si -y standard --site-name="Demo site" --account-pass=demo;`
 
 Stick this into your settings.php
 
@@ -31,9 +31,9 @@ $config_directories = array(
 
 - Run this to import the config.
 
-`drush cset "system.site" uuid "$(drush cget system.site uuid --source=sync --format=list)" -y`
-`drush cim -y`
+`drush cset "system.site" uuid "$(drush cget system.site uuid --source=sync --format=list)" -y;`
+`drush cim -y;`
 
 - Enable site core
 
-`drush en -y site_core`
+`drush en -y site_core;`
