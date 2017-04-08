@@ -72,6 +72,14 @@ projects[feeds][version] = 2.0-beta3
 projects[metatag][subdir] = contrib
 projects[metatag][version] = 1.21
 
+projects[omega_tools][subdir] = contrib
+projects[omega_tools][version] = 3.0-rc4
+projects[omega_tools][type] = module
+
+projects[omega] = 4.4
+projects[omega][subdir] = contrib
+projects[omega][type] = theme
+
 projects[tao] = 3.1
 projects[tao][subdir] = contrib
 projects[tao][type] = theme
@@ -79,14 +87,6 @@ projects[tao][type] = theme
 projects[rubik] = 4.4
 projects[rubik][subdir] = contrib
 projects[rubik][type] = theme
-
-projects[omega] = 4.4
-projects[omega][subdir] = contrib
-projects[omega][type] = theme
-
-projects[omega_tools][subdir] = contrib
-projects[omega_tools][version] = 3.0-rc4
-projects[omega_tools][type] = theme
 
 libraries[ckeditor][download][type] = get
 libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.5/ckeditor_3.5.tar.gz

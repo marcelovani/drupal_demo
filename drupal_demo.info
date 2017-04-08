@@ -25,9 +25,13 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 
+; Mine
+dependencies[] = sharerich
+dependencies[] = captcha_keypad
+dependencies[] = blocks_mass_cache
+dependencies[] = cache_purger
 
 ; Contrib
-dependencies[] = addthis
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = entity
@@ -45,12 +49,3 @@ dependencies[] = views_ui
 dependencies[] = wysiwyg
 dependencies[] = xmlsitemap
 dependencies[] = libraries
-
-
-; mv
-;dependencies[] = mv_article
-
-libraries[ckeditor][download][type] = get
-libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.5/ckeditor_3.5.tar.gz
-libraries[colorbox][download][type] = get
-libraries[colorbox][download][url] = http://colorpowered.com/colorbox/colorbox.zip
