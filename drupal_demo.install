@@ -12,4 +12,8 @@ function drupal_demo_install() {
   variable_set("admin_theme", "rubik");
   variable_set("node_admin_theme", '1');
   theme_enable(array("seven"));
+
+  // Disable modules.
+  module_disable(array('overlay'));
+  module_disable(array('toolbar'));
 }

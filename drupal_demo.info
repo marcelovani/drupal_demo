@@ -30,8 +30,14 @@ dependencies[] = sharerich
 dependencies[] = captcha_keypad
 dependencies[] = blocks_mass_cache
 dependencies[] = cache_purger
+dependencies[] = context_admin_exclude
 
 ; Contrib
+dependencies[] = admin_menu
+dependencies[] = admin_devel
+dependencies[] = admin_menu_toolbar
+dependencies[] = module_filter
+dependencies[] = metatag
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = entity
