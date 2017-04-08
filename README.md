@@ -1,8 +1,8 @@
 # drupal_demo
 Demo site for my contrib modules
 
-Installation
-============
+## Installation
+
 - Go into the root and run:
 
 `composer install`
@@ -37,3 +37,7 @@ $config_directories = array(
 - Enable site core
 
 `drush en -y site_core;`
+
+## Running tests
+
+`php core/scripts/run-tests.sh --color --concurrency "31" --directory modules/contrib --dburl mysql://drupaluser@127.0.0.1:33067/drupal8_demo --verbose`
