@@ -77,12 +77,12 @@
 				    "type": "package",
 				    "package": {
 						    "name": "lib/rrssb",
-						    "version": "1.6.5",
+						    "version": "1.6.0",
 						    "type": "drupal-library",
 						    "source": {
 								    "url": "https://github.com/kni-labs/rrssb",
 								    "type": "git",
-								    "reference": "v1.6.5"
+								    "reference": "v1.6.0"
 						    }
 				    }
 		    },
