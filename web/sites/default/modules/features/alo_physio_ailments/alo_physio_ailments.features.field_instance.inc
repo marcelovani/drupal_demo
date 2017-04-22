@@ -10,7 +10,7 @@
 function alo_physio_ailments_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-ailments-body'
+  // Exported field_instance: 'node-ailments-body'.
   $field_instances['node-ailments-body'] = array(
     'bundle' => 'ailments',
     'default_value' => NULL,
@@ -61,7 +61,7 @@ function alo_physio_ailments_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ailments-field_category'
+  // Exported field_instance: 'node-ailments-field_category'.
   $field_instances['node-ailments-field_category'] = array(
     'bundle' => 'ailments',
     'default_value' => NULL,
@@ -105,7 +105,7 @@ function alo_physio_ailments_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ailments-field_tags'
+  // Exported field_instance: 'node-ailments-field_tags'.
   $field_instances['node-ailments-field_tags'] = array(
     'bundle' => 'ailments',
     'default_value' => NULL,

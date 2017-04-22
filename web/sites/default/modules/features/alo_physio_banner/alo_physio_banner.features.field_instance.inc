@@ -10,7 +10,7 @@
 function alo_physio_banner_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-banner-field_image'
+  // Exported field_instance: 'node-banner-field_image'.
   $field_instances['node-banner-field_image'] = array(
     'bundle' => 'banner',
     'deleted' => 0,
@@ -79,7 +79,7 @@ function alo_physio_banner_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-banner-field_url'
+  // Exported field_instance: 'node-banner-field_url'.
   $field_instances['node-banner-field_url'] = array(
     'bundle' => 'banner',
     'default_value' => NULL,

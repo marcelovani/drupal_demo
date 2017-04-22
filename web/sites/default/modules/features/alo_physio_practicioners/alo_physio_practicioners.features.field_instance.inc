@@ -10,7 +10,7 @@
 function alo_physio_practicioners_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-practitioner-body'
+  // Exported field_instance: 'node-practitioner-body'.
   $field_instances['node-practitioner-body'] = array(
     'bundle' => 'practitioner',
     'default_value' => NULL,
@@ -58,11 +58,8 @@ function alo_physio_practicioners_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 200,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'wide_teaser' => array(
@@ -96,7 +93,7 @@ function alo_physio_practicioners_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_ailment'
+  // Exported field_instance: 'node-practitioner-field_ailment'.
   $field_instances['node-practitioner-field_ailment'] = array(
     'bundle' => 'practitioner',
     'default_value' => NULL,
@@ -157,7 +154,7 @@ function alo_physio_practicioners_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_category'
+  // Exported field_instance: 'node-practitioner-field_category'.
   $field_instances['node-practitioner-field_category'] = array(
     'bundle' => 'practitioner',
     'default_value' => NULL,
@@ -200,7 +197,7 @@ function alo_physio_practicioners_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_email'
+  // Exported field_instance: 'node-practitioner-field_email'.
   $field_instances['node-practitioner-field_email'] = array(
     'bundle' => 'practitioner',
     'default_value' => array(
@@ -292,7 +289,7 @@ function alo_physio_practicioners_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_image'
+  // Exported field_instance: 'node-practitioner-field_image'.
   $field_instances['node-practitioner-field_image'] = array(
     'bundle' => 'practitioner',
     'deleted' => 0,
@@ -366,7 +363,7 @@ The person must be positioned on the center of the picture.',
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_phone'
+  // Exported field_instance: 'node-practitioner-field_phone'.
   $field_instances['node-practitioner-field_phone'] = array(
     'bundle' => 'practitioner',
     'default_value' => NULL,
@@ -440,7 +437,7 @@ The person must be positioned on the center of the picture.',
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_qualifications'
+  // Exported field_instance: 'node-practitioner-field_qualifications'.
   $field_instances['node-practitioner-field_qualifications'] = array(
     'bundle' => 'practitioner',
     'default_value' => NULL,
@@ -488,7 +485,7 @@ The person must be positioned on the center of the picture.',
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_reference'
+  // Exported field_instance: 'node-practitioner-field_reference'.
   $field_instances['node-practitioner-field_reference'] = array(
     'bundle' => 'practitioner',
     'default_value' => NULL,
@@ -573,7 +570,7 @@ The person must be positioned on the center of the picture.',
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_tags'
+  // Exported field_instance: 'node-practitioner-field_tags'.
   $field_instances['node-practitioner-field_tags'] = array(
     'bundle' => 'practitioner',
     'default_value' => NULL,
@@ -620,7 +617,7 @@ The person must be positioned on the center of the picture.',
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_therapy'
+  // Exported field_instance: 'node-practitioner-field_therapy'.
   $field_instances['node-practitioner-field_therapy'] = array(
     'bundle' => 'practitioner',
     'default_value' => NULL,
@@ -683,7 +680,7 @@ The person must be positioned on the center of the picture.',
     ),
   );
 
-  // Exported field_instance: 'node-practitioner-field_website'
+  // Exported field_instance: 'node-practitioner-field_website'.
   $field_instances['node-practitioner-field_website'] = array(
     'bundle' => 'practitioner',
     'default_value' => array(

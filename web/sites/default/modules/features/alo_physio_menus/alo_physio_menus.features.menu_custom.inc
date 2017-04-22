@@ -43,6 +43,5 @@ function alo_physio_menus_menu_default_menu_custom() {
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
   t('The <em>Management</em> menu contains links for administrative tasks.');
 
-
   return $menus;
 }

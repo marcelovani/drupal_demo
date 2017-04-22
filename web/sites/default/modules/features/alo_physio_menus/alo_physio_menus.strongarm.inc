@@ -238,13 +238,13 @@ function alo_physio_menus_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'superfish_slp';
-  $strongarm->value = 'sites/default/libraries/superfish/jquery.hoverIntent.minified.js
-sites/default/libraries/superfish/jquery.bgiframe.min.js
-sites/default/libraries/superfish/superfish.js
-sites/default/libraries/superfish/supersubs.js
-sites/default/libraries/superfish/supposition.js
-sites/default/libraries/superfish/sftouchscreen.js
-sites/default/libraries/superfish/sfsmallscreen.js';
+  $strongarm->value = 'sites/alo-physiotherapy.co.uk/libraries/superfish/jquery.hoverIntent.minified.js
+sites/alo-physiotherapy.co.uk/libraries/superfish/jquery.bgiframe.min.js
+sites/alo-physiotherapy.co.uk/libraries/superfish/superfish.js
+sites/alo-physiotherapy.co.uk/libraries/superfish/supersubs.js
+sites/alo-physiotherapy.co.uk/libraries/superfish/supposition.js
+sites/alo-physiotherapy.co.uk/libraries/superfish/sftouchscreen.js
+sites/alo-physiotherapy.co.uk/libraries/superfish/sfsmallscreen.js';
   $export['superfish_slp'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -473,6 +473,16 @@ sites/default/libraries/superfish/sfsmallscreen.js';
     'priority' => '0.5',
   );
   $export['xmlsitemap_settings_menu_link_main-menu'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_menu_link_management';
+  $strongarm->value = array(
+    'status' => '0',
+    'priority' => '0.5',
+  );
+  $export['xmlsitemap_settings_menu_link_management'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

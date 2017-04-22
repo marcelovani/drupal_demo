@@ -61,4 +61,3 @@ features_exclude[variable][comment_default_per_page_article] = comment_default_p
 features_exclude[variable][comment_form_location_article] = comment_form_location_article
 features_exclude[variable][comment_preview_article] = comment_preview_article
 features_exclude[variable][comment_subject_field_article] = comment_subject_field_article
-mtime = 1478299556

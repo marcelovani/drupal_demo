@@ -10,30 +10,7 @@
 function alo_physio_menus_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_home:<front>
-  $menu_links['main-menu_home:<front>'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '<front>',
-    'router_path' => '',
-    'link_title' => 'Home',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Home',
-        'menu_token_link_path' => '',
-      ),
-      'alter' => TRUE,
-      'langcode' => 'en',
-      'identifier' => 'main-menu_home:<front>',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 1,
-    'weight' => -50,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-secondary-menu_blog:blog
+  // Exported menu link: menu-secondary-menu_blog:blog.
   $menu_links['menu-secondary-menu_blog:blog'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'blog',
@@ -53,7 +30,7 @@ function alo_physio_menus_menu_default_menu_links() {
     'weight' => 0,
     'customized' => 1,
   );
-  // Exported menu link: menu-secondary-menu_contact-us:node/371
+  // Exported menu link: menu-secondary-menu_contact-us:node/371.
   $menu_links['menu-secondary-menu_contact-us:node/371'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'node/371',
@@ -73,7 +50,7 @@ function alo_physio_menus_menu_default_menu_links() {
     'weight' => 0,
     'customized' => 1,
   );
-  // Exported menu link: menu-seo_google-analytics:admin/config/system/googleanalytics
+  // Exported menu link: menu-seo_google-analytics:admin/config/system/googleanalytics.
   $menu_links['menu-seo_google-analytics:admin/config/system/googleanalytics'] = array(
     'menu_name' => 'menu-seo',
     'link_path' => 'admin/config/system/googleanalytics',
@@ -93,7 +70,7 @@ function alo_physio_menus_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
   );
-  // Exported menu link: menu-seo_metatags:admin/config/search/metatags
+  // Exported menu link: menu-seo_metatags:admin/config/search/metatags.
   $menu_links['menu-seo_metatags:admin/config/search/metatags'] = array(
     'menu_name' => 'menu-seo',
     'link_path' => 'admin/config/search/metatags',
@@ -113,14 +90,13 @@ function alo_physio_menus_menu_default_menu_links() {
     'weight' => -42,
     'customized' => 1,
   );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
   t('Contact us');
   t('Google Analytics');
-  t('Home');
   t('Metatags');
-
 
   return $menu_links;
 }

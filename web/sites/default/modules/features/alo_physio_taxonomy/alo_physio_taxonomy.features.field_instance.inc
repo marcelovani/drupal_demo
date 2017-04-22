@@ -10,7 +10,7 @@
 function alo_physio_taxonomy_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'taxonomy_term-forums-synonyms_synonym'
+  // Exported field_instance: 'taxonomy_term-forums-synonyms_synonym'.
   $field_instances['taxonomy_term-forums-synonyms_synonym'] = array(
     'bundle' => 'forums',
     'default_value' => NULL,

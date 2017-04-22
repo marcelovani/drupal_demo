@@ -10,7 +10,7 @@
 function alo_physio_articles_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-body'
+  // Exported field_instance: 'node-article-body'.
   $field_instances['node-article-body'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -64,7 +64,7 @@ function alo_physio_articles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_article_type'
+  // Exported field_instance: 'node-article-field_article_type'.
   $field_instances['node-article-field_article_type'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -107,7 +107,7 @@ function alo_physio_articles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_category'
+  // Exported field_instance: 'node-article-field_category'.
   $field_instances['node-article-field_category'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -152,7 +152,7 @@ function alo_physio_articles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_image'
+  // Exported field_instance: 'node-article-field_image'.
   $field_instances['node-article-field_image'] = array(
     'bundle' => 'article',
     'deleted' => 0,
@@ -224,7 +224,7 @@ function alo_physio_articles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_tags'
+  // Exported field_instance: 'node-article-field_tags'.
   $field_instances['node-article-field_tags'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -273,7 +273,7 @@ function alo_physio_articles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-tags-synonyms_synonym'
+  // Exported field_instance: 'taxonomy_term-tags-synonyms_synonym'.
   $field_instances['taxonomy_term-tags-synonyms_synonym'] = array(
     'bundle' => 'tags',
     'default_value' => NULL,

@@ -11,7 +11,7 @@ function alo_physio_blocks_context_default_contexts() {
   $export = array();
 
   $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'about_us';
   $context->description = 'About us';
@@ -424,7 +424,7 @@ function alo_physio_blocks_context_default_contexts() {
   $export['tecar'] = $context;
 
   $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'treatments';
   $context->description = 'Treatments';
