@@ -10,7 +10,7 @@
 function alo_physio_basic_page_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page-body'
+  // Exported field_instance: 'node-page-body'.
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -73,7 +73,7 @@ function alo_physio_basic_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_category'
+  // Exported field_instance: 'node-page-field_category'.
   $field_instances['node-page-field_category'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -117,7 +117,7 @@ function alo_physio_basic_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_image'
+  // Exported field_instance: 'node-page-field_image'.
   $field_instances['node-page-field_image'] = array(
     'bundle' => 'page',
     'deleted' => 0,
@@ -199,7 +199,7 @@ function alo_physio_basic_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_reference'
+  // Exported field_instance: 'node-page-field_reference'.
   $field_instances['node-page-field_reference'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -211,6 +211,7 @@ function alo_physio_basic_page_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => TRUE,
+          'use_content_language' => TRUE,
           'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
@@ -221,6 +222,7 @@ function alo_physio_basic_page_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => TRUE,
+          'use_content_language' => TRUE,
           'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
@@ -260,7 +262,7 @@ function alo_physio_basic_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_tags'
+  // Exported field_instance: 'node-page-field_tags'.
   $field_instances['node-page-field_tags'] = array(
     'bundle' => 'page',
     'default_value' => NULL,

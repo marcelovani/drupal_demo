@@ -9,4 +9,3 @@ dependencies[] = wysiwyg_boxout
 dependencies[] = wysiwyg_smart_paging_seo
 features[features_api][] = api:2
 features[filter][] = filtered_html
-features[wysiwyg][] = filtered_html

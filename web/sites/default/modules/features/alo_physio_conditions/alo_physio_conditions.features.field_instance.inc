@@ -10,7 +10,7 @@
 function alo_physio_conditions_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-therapies-body'
+  // Exported field_instance: 'node-therapies-body'.
   $field_instances['node-therapies-body'] = array(
     'bundle' => 'therapies',
     'default_value' => NULL,
@@ -61,7 +61,7 @@ function alo_physio_conditions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-therapies-field_image'
+  // Exported field_instance: 'node-therapies-field_image'.
   $field_instances['node-therapies-field_image'] = array(
     'bundle' => 'therapies',
     'deleted' => 0,
@@ -133,7 +133,7 @@ function alo_physio_conditions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-therapies-field_reference'
+  // Exported field_instance: 'node-therapies-field_reference'.
   $field_instances['node-therapies-field_reference'] = array(
     'bundle' => 'therapies',
     'default_value' => NULL,
@@ -145,6 +145,7 @@ function alo_physio_conditions_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => TRUE,
+          'use_content_language' => TRUE,
           'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
