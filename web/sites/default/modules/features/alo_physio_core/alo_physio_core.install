@@ -99,3 +99,29 @@ function alo_physio_core_update_7008() {
 function alo_physio_core_update_7009() {
   module_enable(array('captcha_keypad'));
 }
+
+/**
+ * Delete old entries.
+ */
+function alo_physio_core_update_7010() {
+  $list = array(
+    'devel_themer',
+    'alo_physio_testimomial',
+    'general_services',
+    'google_translations',
+    'hs_taxonomy_views',
+    'icl_core',
+    'icl_translate',
+    'local_translations',
+    'service_links',
+    'service_links_displays',
+    'stringoverrides',
+    'variable_advanced',
+    'widget_services',
+    'haiku',
+    'stringoverrides_migrate',
+  );
+  foreach ($list as $name) {
+    db_delete('system')->condition('name', $name)->execute();
+  }
+}
