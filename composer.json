@@ -1,0 +1,70 @@
+{
+    "name": "marcelovani/alophyshiotherapy",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {
+        "pdo": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/7"
+        },
+		    "drupal": {
+				    "type": "package",
+				    "package": {
+						    "name": "drupal/core",
+						    "version": "7",
+						    "type": "drupal-core",
+						    "source": {
+								    "url": "https://git.drupal.org/project/drupal.git",
+								    "type": "git",
+								    "reference": "7.x"
+						    }
+				    }
+		    },
+		    "masonry": {
+				    "type": "package",
+				    "package": {
+						    "name": "lib/masonry",
+						    "version": "3.2.2",
+						    "type": "drupal-library",
+						    "source": {
+								    "url": "https://github.com/desandro/masonry",
+								    "type": "git",
+								    "reference": "master"
+						    }
+				    }
+		    }
+    },
+	  "require": {
+		    "drupal/core": "~7",
+        "composer/installers": "^1.2",
+        "drupal/sharerich": "^2.5",
+        "drupal/acquia_marina": "^1.0@RC",
+        "lib/masonry": "^3.2"
+    },
+	  "scripts": {
+		  "post-install-cmd": [
+		  	"@composer drupal-scaffold",
+			  "rm -rf ./core; cd ./web/core; rm -rf sites; ln -s ../sites; rm -rf cache; ln -s ../cache"
+		  ],
+		  "post-update-cmd": [
+			  "@composer drupal-scaffold",
+			  "rm -rf ./core; cd ./web/core; rm -rf sites; ln -s ../sites; rm -rf cache; ln -s ../cache"
+		  ],
+		  "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+	  },
+		"extra": {
+			"installer-paths": {
+				"web/core": ["drupal/core"],
+				"web/profiles/contrib/{$name}": ["type:drupal-profile"],
+				"web/sites/default/libraries/{$name}": ["type:drupal-library"],
+				"web/sites/default/modules/contrib/{$name}": ["type:drupal-module"],
+				"web/sites/default/themes/contrib/{$name}": ["type:drupal-theme"]
+			},
+			"drupal-scaffold": {
+				"excludes": [
+					"web.config"
+				]
+			}
+		}
+}

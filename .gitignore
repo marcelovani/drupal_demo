@@ -19,11 +19,14 @@ robots.txt
 /MAINTAINERS.txt
 /UPGRADE.txt
 /README.txt
+/vendor
 sites/all/README.txt
 sites/all/modules/README.txt
 sites/all/themes/README.txt
-web/sites/default/modules/contrib
-web/sites/default/themes/contrib
+/web/core
+/web/sites/default/libraries
+/web/sites/default/modules/contrib
+/web/sites/default/themes/contrib
 
 # Ignore everything but the "sites" folder ( for non core developer )
 web.config
