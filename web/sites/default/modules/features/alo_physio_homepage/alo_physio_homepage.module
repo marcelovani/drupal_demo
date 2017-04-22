@@ -1,0 +1,57 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio Homepage feature.
+ */
+
+include_once 'alo_physio_homepage.features.inc';
+
+/**
+ * Update nodes on homepage.
+ */
+function alo_physio_homepage_update_7001() {
+  db_query('UPDATE {node} SET promote = 0;');
+  db_query('DELETE from {node} where nid = 183;');
+  variable_set('site_frontpage', 'home/');
+}
+
+/**
+ * Implements hook_menu().
+ */
+function alo_physio_homepage_menu() {
+  $items = array();
+
+  $items['home'] = array(
+    'title' => 'Home',
+    'page callback' => 'alo_physio_homepage_home',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback for homepage.
+ *
+ * @return string
+ */
+function alo_physio_homepage_home() {
+  return '';
+}
+
+/**
+ * Implements hook_page_alter().
+ */
+function alo_physio_homepage_page_alter(&$page) {
+  drupal_add_js(
+    drupal_get_path('module', 'alo_physio_homepage') . '/js/masonry.pkgd.min.js',
+    array('scope' => 'footer', 'weight' => 5
+    )
+  );
+  drupal_add_js(
+    drupal_get_path('module', 'alo_physio_homepage') . '/js/alo_physio_homepage.js',
+    array('scope' => 'footer', 'weight' => 5
+    )
+  );
+}

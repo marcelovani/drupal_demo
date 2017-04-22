@@ -1,0 +1,34 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio SEO feature.
+ */
+
+include_once 'alo_physio_seo.features.inc';
+
+/**
+ * Enable seo tools.
+ */
+function alo_physio_seo_update_7001() {
+  module_enable(array('seotools'));
+  module_enable(array('google_analytics_et'));
+}
+
+/**
+ * Enable seo tools.
+ */
+function alo_physio_seo_google_analytics_et_api() {
+  $selectors = array(
+    array(
+      'event' => 'mousedown',
+      'selector' => '#block-menu-menu-call-to-action a',
+      'category' => 'Action button',
+      'action' => '!text',
+      'label' => '!currentPage',
+      'value' => 0,
+      'noninteraction' => FALSE,
+    ),
+  );
+
+  return $selectors;
+}

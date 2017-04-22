@@ -1,0 +1,9 @@
+name = Alo Physio Social
+description = Social buttons
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = sharerich
+features[ctools][] = sharerich:default_sharerich_sets:1
+features[features_api][] = api:2
+features[sharerich_sets][] = imported_set

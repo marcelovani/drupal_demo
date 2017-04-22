@@ -1,0 +1,32 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio Logos feature.
+ */
+
+include_once 'alo_physio_logos.features.inc';
+
+/*
+ * Add css and js.
+ */
+function alo_physio_logos_page_alter() {
+  drupal_add_css(drupal_get_path('module', 'alo_physio_logos') . '/css/alo_physio_logos.css');
+}
+
+/**
+ * Implements hook_node_preprocess_node().
+ */
+function alo_physio_logos_preprocess_node(&$variables) {
+  // Add links to logos.
+  if ($variables['type'] == 'logos') {
+    if (isset($variables['field_image'])) {
+      if (!empty($variables['node']->field_website[LANGUAGE_NONE][0])) {
+        // Add link to banner image.
+        $variables['content']['field_image'][0]['#path']['path'] = $variables['node']->field_website[LANGUAGE_NONE][0]['url'];
+        // Add alt and title to banner image.
+        $variables['content']['field_image'][0]['#item']['title'] = $variables['title'];
+        $variables['content']['field_image'][0]['#item']['alt'] = $variables['node']->field_website[LANGUAGE_NONE][0]['title'];
+      }
+    }
+  }
+}

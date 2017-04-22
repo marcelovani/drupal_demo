@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio Taxonomy feature.
+ */
+
+include_once 'alo_physio_taxonomy.features.inc';

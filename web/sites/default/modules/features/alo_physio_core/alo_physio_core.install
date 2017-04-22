@@ -1,0 +1,101 @@
+<?php
+
+/**
+* Implements hook_install();
+*/
+function alo_physio_core_install() {
+module_disable(array('fancybox'));
+module_enable(array('sharerich'));
+module_disable(array('sharethis'));
+module_disable(array('superfish'));
+module_disable(array('jquery_update'));
+module_disable(array('tracker'));
+
+variable_set('theme_default', 'alo_physio');
+variable_set('admin_theme', 'rubik');
+variable_set('site_frontpage', 'node/3');
+variable_set('site_403', 'node/3');
+variable_set('site_404', 'node/3');
+}
+
+/**
+* Enable new features.
+*/
+function alo_physio_core_update_7000() {
+module_enable(array('superfish'));
+module_enable(array('alo_physio_logos'));
+module_enable(array('alo_physio_banner'));
+module_enable(array('alo_physio_social'));
+module_enable(array('alo_physio_homepage'));
+module_enable(array('alo_physio_therapies'));
+module_enable(array('alo_physio_case_studies'));
+module_enable(array('alo_physio_media'));
+module_enable(array('alo_physio_footer'));
+module_enable(array('alo_physio_testimonials'));
+module_enable(array('alo_physio_taxonomy'));
+module_enable(array('field_group'));
+module_enable(array('imagecrop'));
+
+module_disable(array('comment'));
+module_disable(array('css_injector'));
+module_disable(array('forum'));
+
+db_delete('system')->condition('name', 'alo_physio_forum')->execute();
+}
+
+/**
+ * Theme upgrade.
+ */
+function alo_physio_core_update_7002() {
+  theme_enable(array('haiku'));
+  theme_enable(array('poetry'));
+  theme_disable(array('acquia_marina'));
+  theme_disable(array('fusion'));
+  theme_disable(array('kanji'));
+  theme_disable(array('seven'));
+  theme_disable(array('alo_physio'));
+  variable_set('theme_default', 'poetry');
+}
+
+/**
+ * Enable modules.
+ */
+function alo_physio_core_update_7004() {
+  module_enable(array('eu_cookie_compliance'));
+}
+
+
+/**
+ * Enable alo_physio_alliances.
+ */
+function alo_physio_core_update_7005() {
+  module_disable(array('alo_physio_alliances'));
+}
+
+/**
+ * Enable views_bulk_operations.
+ */
+function alo_physio_core_update_7006() {
+  module_enable(array('views_bulk_operations'));
+}
+
+/**
+ * Enable sitemap.
+ */
+function alo_physio_core_update_7007() {
+  module_enable(array('site_sitemap'));
+}
+
+/**
+ * Enable site_verify.
+ */
+function alo_physio_core_update_7008() {
+  module_enable(array('site_verify'));
+}
+
+/**
+ * Enable captcha_keypad.
+ */
+function alo_physio_core_update_7009() {
+  module_enable(array('captcha_keypad'));
+}

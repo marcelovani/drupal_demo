@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio Menus feature.
+ */
+
+include_once 'alo_physio_menus.features.inc';
+
+/*
+ * Add css and js
+ */
+function alo_physio_menus_page_alter() {
+  drupal_add_js(drupal_get_path('module', 'alo_physio_menus') . '/js/alo_physio_menus.js');
+  drupal_add_css(drupal_get_path('module', 'alo_physio_menus') . '/css/alo_physio_menus.css');
+}

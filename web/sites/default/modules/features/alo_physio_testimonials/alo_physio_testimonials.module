@@ -1,0 +1,47 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio testimonials feature.
+ */
+
+include_once 'alo_physio_testimonials.features.inc';
+
+/*
+ * Add css and js
+ */
+function alo_physio_testimonials_page_alter() {
+  drupal_add_js(drupal_get_path('module', 'alo_physio_testimonials') . '/js/alo_physio_testimonials.js');
+  //drupal_add_css(drupal_get_path('module', 'alo_physio_testimonials') . '/css/alo_physio_testimonials.css');
+}
+
+/**
+ * Implements hook_process_node().
+ *
+ * @param $variables
+ */
+function alo_physio_testimonials_preprocess_page(&$variables) {
+  if ($node = menu_get_object()) {
+    if ($node->type == 'testimonial') {
+      // Add prefix.
+      $variables['title_prefix']['#markup'] = t('Testimonial:');
+
+      // Breadcrumb.
+      $breadcrumb = drupal_get_breadcrumb();
+      $breadcrumb[] = l(t('Testimonials'), 'testimonials');
+      drupal_set_breadcrumb($breadcrumb);
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_view().
+ *
+ * Provides additional argument to allow the display to be forced, to work
+ * around problems elsewhere in the APIs.
+ */
+function alo_physio_testimonials_entity_view($entity, $entity_type, $view_mode, $langcode, $force = FALSE) {
+  if (isset($entity->type) && $entity->type == 'testimonial' && $view_mode == 'full') {
+    // Change breadcrumb.
+
+  }
+}

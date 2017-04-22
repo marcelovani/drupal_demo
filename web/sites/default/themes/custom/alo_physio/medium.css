@@ -1,0 +1,257 @@
+@media screen and (min-width: 500px) {
+    #header,
+    #container,
+    #footer {
+        margin: 0 auto;
+        padding: 0;
+        width: 960px;
+    }
+
+    #headerWrapper {
+        background: none;
+        background-color: #fff;
+        min-height: 10px;
+        height: auto;
+        box-shadow: none;
+        position: relative;
+        width: 100%;
+        top: auto;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    #siteName {
+        margin-left: 10px;
+        height: 72px;
+        position: relative;
+    }
+
+    #admin-menu,
+    #secondary-menu {
+        display: block;
+    }
+
+    #siteName img#logo {
+        max-height: none;
+    }
+
+    #inner {
+        float: left;
+        margin: 0 0 5px;
+        padding: 0;
+        top: -5px;
+        position: relative;
+    }
+
+    #preface_top {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #preface_top .content {
+        padding: 0;
+    }
+
+    #views_slideshow_controls_text_banner-large_banner {
+        top: 133px;
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .view-display-id-large_banner h2 {
+        display: none;
+    }
+
+    #views_slideshow_controls_text_pause_banner-large_banner {
+        display: none;
+    }
+
+    #views_slideshow_controls_text_previous_banner-large_banner a:hover,
+    #views_slideshow_controls_text_next_banner-large_banner a:hover {
+        text-decoration: none;
+    }
+
+    #views_slideshow_controls_text_previous_banner-large_banner a:before {
+        content: "<";
+    }
+
+    #views_slideshow_controls_text_next_banner-large_banner {
+        float: right;
+    }
+
+    #views_slideshow_controls_text_next_banner-large_banner a:after {
+        content: ">";
+    }
+
+    #footer .block {
+        width: 23%;
+    }
+
+    /* primary menu */
+
+    #primaryMenu {
+        width: 100%;
+    }
+
+    #primaryMenu .block {
+        margin: 0;
+        padding: 0px;
+        position: relative;
+        background: #fff;
+        border-radius: 0;
+        box-shadow: none;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-box-shadow: 0;
+        -webkit-box-shadow: 0;
+        /*float: right;*/
+    }
+
+    #primaryMenu ul.menu li a,
+    #primaryMenu ul.menu li a:link,
+    #primaryMenu ul.menu li a:visited {
+        background: #e1e1e1!important;
+        color: #154B70!important;
+        padding: 5px!important;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+    }
+
+    #primaryMenu ul.menu li a:hover,
+    #primaryMenu ul.menu li a.active {
+        color: #fff!important;
+        background: #944FA1!important;
+        background: -moz-linear-gradient(top, #944FA1 0%, #944FA1 27%, #944FA1 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#944FA1), color-stop(27%,#944FA1), color-stop(100%,#944FA1));
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#944FA1', endColorstr='#944FA1',GradientType=0 );
+        background: -o-linear-gradient(top, #944FA1 0%,#944FA1 27%,#944FA1 100%);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+    }
+
+    #primaryMenu ul.menu {
+        background: none;
+        font-family: "Myriad Pro", "Myriad Web Pro Regular", "Lucida Grande", Geneva, Trebuchet MS, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        margin: 0;
+        height: 28px;
+        text-transform: uppercase;
+        border-bottom: 3px solid #944FA1;
+    }
+
+    #primaryMenu ul.menu li {
+        background: transparent;
+        display: block;
+        float: left;
+        margin: 0 4px 0 0;
+        padding: 0;
+        position: relative;
+        line-height: 150%;
+        height: 24px;
+    }
+
+    #primaryMenu ul.menu li.leaf {
+
+    }
+
+    #primaryMenu ul.menu li.expanded ul {
+        margin: 0px!important;
+        top: 27px;
+    }
+
+    #primaryMenu ul.menu li.expanded ul li a {
+        color: #fff!important;
+        background: #944FA1!important;
+        background: -moz-linear-gradient(top, #944FA1 0%, #944FA1 27%, #944FA1 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#944FA1), color-stop(27%,#944FA1), color-stop(100%,#944FA1));
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#944FA1', endColorstr='#944FA1',GradientType=0 );
+        background: -o-linear-gradient(top, #944FA1 0%,#944FA1 27%,#944FA1 100%);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        -moz-border-radius-topleft: 0;
+        -moz-border-radius-topright: 0;
+        -webkit-border-top-left-radius: 0;
+        -webkit-border-top-right-radius: 0;
+    }
+
+    #primaryMenu ul.menu li.expanded ul li a:hover {
+        color: #ff9999!important;
+    }
+
+    #primaryMenu ul.menu li.expanded>a:after {
+        content: "";
+    }
+
+    /* primary menu */
+
+    .sidebar {
+        margin: 0;
+        padding: 0 4px 0 4px;
+        width: 25%!important;
+    }
+
+    .two-sidebars #center {
+        width: 45%!important;
+    }
+
+    .view-display-id-large_banner {
+        width: 100%!important;
+    }
+
+    .block-icon {
+        height: 44px!important;
+        width: 48px!important;
+    }
+
+    .top-banner {
+        background-image: url("/sites/alo-physiotherapy.co.uk/files/images/bkg-blue.jpg");
+        background-position: 0px 0px;
+        background-repeat: repeat;
+        background-color: #944FA1;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .top-banner .tecar-icon-rounded {
+        display: block;
+        position: relative;
+        background-image: url("/sites/alo-physiotherapy.co.uk/files/images/tecar-icon.png");
+        right: 30px;
+        top: -55px;
+        width: 100px;
+        height: 100px;
+        float: right;
+    }
+
+    .item-list ul li,
+    li.leaf,
+    ul.menu li,
+        /*li,*/
+    ul li.leaf {
+        background: url(images/icons/list-bullet.png) no-repeat 0 7px;
+        display: block;
+        list-style: none;
+        list-style-image: none;
+        margin: 0;
+        padding-left: 15px;
+    }
+
+    .rrssb-buttons li {
+        background: none!important;
+        list-style: none!important;
+        list-style-image: none!important;
+        padding-left: 5px!important;
+    }
+}

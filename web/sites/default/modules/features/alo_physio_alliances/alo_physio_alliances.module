@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio Alliances feature.
+ */
+
+include_once 'alo_physio_alliances.features.inc';

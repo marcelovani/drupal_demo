@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio Media feature.
+ */
+
+include_once 'alo_physio_media.features.inc';

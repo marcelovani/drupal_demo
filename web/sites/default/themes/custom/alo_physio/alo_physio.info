@@ -1,0 +1,22 @@
+name = ALO Physio
+description = Overrides for base theme.
+core = 7.x
+stylesheets[all][] = overrides.css
+scripts[] = alo_physio.js
+
+base theme = kanji
+
+regions[highlighted] = Highlighted
+regions[search_box] = Search box
+regions[main_menu] = Main menu
+regions[sidebar_first] = sidebar first
+regions[sidebar_second] = sidebar second
+regions[header_top] = header top
+regions[header] = header
+regions[preface_top] = preface top
+regions[content_top] = content top
+regions[content] = content
+regions[content_bottom] = content bottom
+regions[postscript_bottom] = postscript bottom
+regions[footer_message] = Footer message
+regions[footer_bottom] = footer bottom

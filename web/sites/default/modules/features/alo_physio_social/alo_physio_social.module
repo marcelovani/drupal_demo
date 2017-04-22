@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio Social feature.
+ */
+
+include_once 'alo_physio_social.features.inc';

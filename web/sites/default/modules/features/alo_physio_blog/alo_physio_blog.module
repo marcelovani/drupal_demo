@@ -1,0 +1,29 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio Blog feature.
+ */
+
+include_once 'alo_physio_blog.features.inc';
+
+/**
+ *  Implements hook_views_query_alter().
+ */
+function alo_physio_blog_views_query_alter(&$view, &$query) {
+  if ($view->name == 'blog' && $view->current_display == 'block') {
+    if ($node = menu_get_object()) {
+      // Exclude current node from blog view.
+      $query->add_where(1, 'node.nid', $node->nid, '!=');
+    }
+  }
+}
+
+function alo_physio_blog_breadcrumb_alter(&$active_trail, $item) {
+ // var_dump(current_path()); 
+ if (!drupal_is_front_page()) {
+    $end = end($active_trail);
+    if ($item['href'] == $end['href']) {
+      $active_trail[] = $end;
+    }
+  }
+}

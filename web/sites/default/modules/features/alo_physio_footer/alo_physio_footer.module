@@ -1,0 +1,51 @@
+<?php
+/**
+ * @file
+ * Code for the Alo Physio Footer feature.
+ */
+
+include_once 'alo_physio_footer.features.inc';
+
+/*
+ * Add css and js
+ */
+function alo_physio_footer_page_alter() {
+  drupal_add_css(drupal_get_path('module', 'alo_physio_footer') . '/css/alo_physio_footer.css');
+}
+
+
+/**
+ * Implements hook_block_info().
+ */
+function alo_physio_footer_block_info() {
+  $blocks['footer_social'] = array(
+    'info' => t('Footer social'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function alo_physio_footer_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'footer_social':
+      $content = '
+      <ul class="footer_icons">
+      <li><h2>Social Media</h2></li>
+      <li><a target="_blank" href="http://twitter.com/alophysio"><i class="social foundicon-twitter"></i></a></li>
+      <li><a target="_blank" href="https://www.facebook.com/alophysio"><i class="social foundicon-facebook"></i></a></li>
+      <li><a target="_blank" href="http://www.linkedin.com/in/alophysiotherapy"><i class="social foundicon-linkedin"></i></a></li>
+      <li><a target="_blank" href="https://plus.google.com/115319435813604073932/about"><i class="social foundicon-google-plus"></i></a></li>
+      <li><a target="_blank" href="http://www.flickr.com/photos/alophysiotherapy"><i class="social foundicon-flickr"></i></a></li>
+      <li><a target="_blank" href="http://alo-physiotherapy.tumblr.com/"><i class="social foundicon-tumblr"></i></a></li>
+      </ul>
+      ';
+
+      $block['content'] = $content;
+      break;
+  }
+  return $block;
+}

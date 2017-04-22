@@ -1,0 +1,11 @@
+name = ALo Physio Survey
+description = Displays a floating button on the right hand side of the page
+core = 7.x
+package = Features
+dependencies[] = block
+dependencies[] = context
+dependencies[] = ctools
+features[context][] = survey
+features[ctools][] = context:context:3
+features[features_api][] = api:2
+mtime = 1431557744
