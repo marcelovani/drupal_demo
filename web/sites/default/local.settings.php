@@ -19,7 +19,7 @@ $conf['show_memcache_statistics'] = 0;
 //return;
 // Memcache
 include_once('./includes/cache.inc');
-include_once('./sites/alo-physiotherapy.co.uk/modules/contrib/memcache/memcache.inc');
+include_once('./sites/default/modules/contrib/memcache/memcache.inc');
 $conf['cache_default_class'] = 'MemCacheDrupal';
 $conf['memcache_key_prefix'] = 'alo-physio';
 
@@ -41,5 +41,5 @@ ini_set('html_errors', TRUE);
 
 $conf['error_level'] = 2;
 
-$conf['file_public_path'] =  'sites/alo-physiotherapy.co.uk/files';
+$conf['file_public_path'] =  'sites/default/files';
 $conf['image_allow_insecure_derivatives'] = TRUE;

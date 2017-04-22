@@ -215,7 +215,7 @@
     }
 
     .top-banner {
-        background-image: url("/sites/alo-physiotherapy.co.uk/files/images/bkg-blue.jpg");
+        background-image: url("/sites/default/files/images/bkg-blue.jpg");
         background-position: 0px 0px;
         background-repeat: repeat;
         background-color: #944FA1;
@@ -227,7 +227,7 @@
     .top-banner .tecar-icon-rounded {
         display: block;
         position: relative;
-        background-image: url("/sites/alo-physiotherapy.co.uk/files/images/tecar-icon.png");
+        background-image: url("/sites/default/files/images/tecar-icon.png");
         right: 30px;
         top: -55px;
         width: 100px;

@@ -55,10 +55,10 @@ function alo_physio_alliances_views_default_views() {
   $handler->display->display_options['fields']['field_website']['label'] = '';
   $handler->display->display_options['fields']['field_website']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_website']['alter']['text'] = '[title] - <a class="fancybox-popup" href="[field_website-url]">[field_website-title]
-<img class="same-window" src="/sites/alo-physiotherapy.co.uk/files/images/general/same-window.jpg"/>
+<img class="same-window" src="/sites/default/files/images/general/same-window.jpg"/>
 </a>
 <a class="new-window" target="_blank" href="[field_website-url]">
-<img class="new-window" src="/sites/alo-physiotherapy.co.uk/files/images/general/new-window.jpg"/>
+<img class="new-window" src="/sites/default/files/images/general/new-window.jpg"/>
 </a>';
   $handler->display->display_options['fields']['field_website']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_website']['click_sort_column'] = 'url';
@@ -110,10 +110,10 @@ function alo_physio_alliances_views_default_views() {
     t('Desc'),
     t('No one develops without support! Along the years we have built a strong team of professionals we can refer our patients to if needed. A multidisciplinary team is what makes a difference when recovering from injuries.'),
     t('[title] - <a class="fancybox-popup" href="[field_website-url]">[field_website-title]
-<img class="same-window" src="/sites/alo-physiotherapy.co.uk/files/images/general/same-window.jpg"/>
+<img class="same-window" src="/sites/default/files/images/general/same-window.jpg"/>
 </a>
 <a class="new-window" target="_blank" href="[field_website-url]">
-<img class="new-window" src="/sites/alo-physiotherapy.co.uk/files/images/general/new-window.jpg"/>
+<img class="new-window" src="/sites/default/files/images/general/new-window.jpg"/>
 </a>'),
     t('Page'),
     t('Feed'),

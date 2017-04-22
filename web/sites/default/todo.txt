@@ -22,7 +22,7 @@ rename regions accordingly + update contexts (services = our team)
 
 style menu for mobile
 add breadcrumbs
-change public file system path sites/alo-physiotherapy.co.uk/files
+change public file system path sites/default/files
 make menu that slides to left
 export pathauto patterns
 

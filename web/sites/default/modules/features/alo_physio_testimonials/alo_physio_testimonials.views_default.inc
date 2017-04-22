@@ -114,7 +114,7 @@ function alo_physio_testimonials_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<p>* To find out further information please see the main Tecar website <a class="fancybox-iframe" href="http://www.tecar.eu/">http://www.tecar.eu<img class="same-window" src="/sites/alo-physiotherapy.co.uk/files/images/general/same-window.jpg"/></a><a class="new-window" target="_blank" href="http://www.tecar.eu/"><img class="new-window" src="/sites/alo-physiotherapy.co.uk/files/images/general/new-window.jpg"/></a>
+  $handler->display->display_options['footer']['area']['content'] = '<p>* To find out further information please see the main Tecar website <a class="fancybox-iframe" href="http://www.tecar.eu/">http://www.tecar.eu<img class="same-window" src="/sites/default/files/images/general/same-window.jpg"/></a><a class="new-window" target="_blank" href="http://www.tecar.eu/"><img class="new-window" src="/sites/default/files/images/general/new-window.jpg"/></a>
 </p>
 ';
   $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
@@ -229,7 +229,7 @@ function alo_physio_testimonials_views_default_views() {
     t('Feed'),
     t('Tecar Page'),
     t('Here are some testimonials which show how international athletes have valued it in training (i.e. preventative use) and for recovery from injury.'),
-    t('<p>* To find out further information please see the main Tecar website <a class="fancybox-iframe" href="http://www.tecar.eu/">http://www.tecar.eu<img class="same-window" src="/sites/alo-physiotherapy.co.uk/files/images/general/same-window.jpg"/></a><a class="new-window" target="_blank" href="http://www.tecar.eu/"><img class="new-window" src="/sites/alo-physiotherapy.co.uk/files/images/general/new-window.jpg"/></a>
+    t('<p>* To find out further information please see the main Tecar website <a class="fancybox-iframe" href="http://www.tecar.eu/">http://www.tecar.eu<img class="same-window" src="/sites/default/files/images/general/same-window.jpg"/></a><a class="new-window" target="_blank" href="http://www.tecar.eu/"><img class="new-window" src="/sites/default/files/images/general/new-window.jpg"/></a>
 </p>
 '),
     t('Teaser'),
