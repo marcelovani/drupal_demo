@@ -30,7 +30,7 @@
 						    "source": {
 								    "url": "https://github.com/desandro/masonry",
 								    "type": "git",
-								    "reference": "master"
+								    "reference": "v3.2.2"
 						    }
 				    }
 		    },
@@ -43,7 +43,7 @@
 						    "source": {
 								    "url": "https://github.com/ckeditor/ckeditor-dev",
 								    "type": "git",
-								    "reference": "master"
+								    "reference": "4.6.2"
 						    }
 				    }
 		    },
@@ -56,7 +56,7 @@
 						    "source": {
 								    "url": "https://github.com/malsup/cycle.git",
 								    "type": "git",
-								    "reference": "master"
+								    "reference": "3.0.3"
 						    }
 				    }
 		    },
@@ -82,7 +82,7 @@
 						    "source": {
 								    "url": "https://github.com/kni-labs/rrssb",
 								    "type": "git",
-								    "reference": "master"
+								    "reference": "v1.6.5"
 						    }
 				    }
 		    },
@@ -90,10 +90,23 @@
 				    "type": "package",
 				    "package": {
 						    "name": "lib/superfish",
-						    "version": "1.0",
+						    "version": "dev-1.x",
 						    "type": "drupal-library",
 						    "source": {
 								    "url": "https://github.com/mehrpadin/Superfish-for-Drupal",
+								    "type": "git",
+								    "reference": "1.x"
+						    }
+				    }
+		    },
+		    "flexslider": {
+				    "type": "package",
+				    "package": {
+						    "name": "lib/flexslider",
+						    "version": "2.6.3",
+						    "type": "drupal-library",
+						    "source": {
+								    "url": "https://github.com/woocommerce/FlexSlider",
 								    "type": "git",
 								    "reference": "master"
 						    }
@@ -110,12 +123,10 @@
         "lib/jquery.cycle": "^3.0",
         "lib/json2": "dev-master",
         "lib/rrssb": "^1.6",
-        "drupal/superfish": "^2.0",
-        "lib/superfish": "^1.0",
         "drupal/kanji": "^3.6",
         "drupal/active_tags": "^2.0@alpha",
         "drupal/admin_menu": "^3.0@RC",
-        "drupal/advagg": "^2.21",
+        "drupal/advagg": "2.21",
         "drupal/alchemy": "^1.0@beta",
         "drupal/blocks_mass_cache": "^2.2",
         "drupal/boost": "^1.2",
@@ -189,7 +200,10 @@
         "drupal/wysiwyg": "^2.3",
         "drupal/wysiwyg_boxout": "^1.1",
         "drupal/wysiwyg_smart_paging_seo": "^1.2",
-        "drupal/xmlsitemap": "^2.3"
+        "drupal/xmlsitemap": "^2.3",
+        "lib/flexslider": "^2.6",
+        "drupal/superfish": "^2.0",
+        "lib/superfish": "dev-1.x"
     },
 	  "scripts": {
 		  "post-install-cmd": [
