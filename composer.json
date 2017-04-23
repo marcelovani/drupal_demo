@@ -38,12 +38,12 @@
 				    "type": "package",
 				    "package": {
 						    "name": "lib/ckeditor",
-						    "version": "4.6.2",
+						    "version": "4.6.1",
 						    "type": "drupal-library",
-						    "source": {
-								    "url": "https://github.com/ckeditor/ckeditor-dev",
-								    "type": "git",
-								    "reference": "4.6.2"
+						    "dist": {
+								    "url": "https://download.cksource.com/CKEditor/CKEditor/CKEditor%204.6.1/ckeditor_4.6.1_full.zip",
+								    "type": "zip",
+								    "reference": "master"
 						    }
 				    }
 		    },
