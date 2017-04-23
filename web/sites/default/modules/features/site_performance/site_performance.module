@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Site Performance feature.
+ */
+
+include_once 'site_performance.features.inc';

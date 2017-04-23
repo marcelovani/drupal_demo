@@ -104,6 +104,8 @@ function alo_physio_core_update_7009() {
  * Delete old entries.
  */
 function alo_physio_core_update_7010() {
+  module_enable(array('site_performance'));
+
   $list = array(
     'devel_themer',
     'alo_physio_testimomial',
