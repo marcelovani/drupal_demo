@@ -371,16 +371,6 @@ function alo_physio_blocks_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'system-navigation' => array(
-          'module' => 'system',
-          'delta' => 'navigation',
-          'region' => 'sidebar_second',
-          'weight' => '29',
-        ),
-      ),
-    ),
   );
   $context->condition_mode = 0;
 

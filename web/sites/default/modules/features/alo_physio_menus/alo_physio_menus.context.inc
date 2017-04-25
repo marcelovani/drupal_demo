@@ -103,38 +103,5 @@ function alo_physio_menus_context_default_contexts() {
   t('Navigation');
   $export['secondary_menu'] = $context;
 
-  $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
-  $context->name = 'user_menu';
-  $context->description = 'User menu';
-  $context->tag = 'Navigation';
-  $context->conditions = array(
-    'sitewide' => array(
-      'values' => array(
-        1 => 1,
-      ),
-    ),
-  );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'system-user-menu' => array(
-          'module' => 'system',
-          'delta' => 'user-menu',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
-  $context->condition_mode = 0;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Navigation');
-  t('User menu');
-  $export['user_menu'] = $context;
-
   return $export;
 }

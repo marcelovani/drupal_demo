@@ -50,53 +50,11 @@ function alo_physio_menus_menu_default_menu_links() {
     'weight' => 0,
     'customized' => 1,
   );
-  // Exported menu link: menu-seo_google-analytics:admin/config/system/googleanalytics.
-  $menu_links['menu-seo_google-analytics:admin/config/system/googleanalytics'] = array(
-    'menu_name' => 'menu-seo',
-    'link_path' => 'admin/config/system/googleanalytics',
-    'router_path' => 'admin/config/system/googleanalytics',
-    'link_title' => 'Google Analytics',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-seo_google-analytics:admin/config/system/googleanalytics',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -45,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-seo_metatags:admin/config/search/metatags.
-  $menu_links['menu-seo_metatags:admin/config/search/metatags'] = array(
-    'menu_name' => 'menu-seo',
-    'link_path' => 'admin/config/search/metatags',
-    'router_path' => 'admin/config/search/metatags',
-    'link_title' => 'Metatags',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-seo_metatags:admin/config/search/metatags',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -42,
-    'customized' => 1,
-  );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
   t('Contact us');
-  t('Google Analytics');
-  t('Metatags');
 
   return $menu_links;
 }
