@@ -1,6 +1,7 @@
 (function (jQuery) {
+	  'use strict';
     Drupal.behaviors.alo_physio = {
-        attach: function (context, settings) {
+        attach: function () {
 
             jQuery("#views_slideshow_controls_text_previous_banner-large_banner, #views_slideshow_controls_text_next_banner-large_banner").html('<a href="#"></a>').css('font-size', '30px');
 
@@ -27,11 +28,11 @@
                 });
 
                 jQuery(".font-sizes").click(function() {
-                    if (font_size == 14) {
+                    if (font_size === 14) {
                         font_size = 17;
-                    } else if (font_size == 17) {
+                    } else if (font_size === 17) {
                         font_size = 20;
-                    } else if (font_size == 20) {
+                    } else if (font_size === 20) {
                         font_size = 14;
                     }
                     jQuery("body").css("font-size", font_size);

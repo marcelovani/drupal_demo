@@ -6,7 +6,7 @@ $databases = array (
     'default' => 
     array (
 	    'driver' => 'mysql',
-	    'database' => 'alo-physio_dev',
+	    'database' => 'alo_physio_upgrade',
 	    'username' => 'drupaluser',
 	    'password' => '',
 	    'host' => '127.0.0.1',

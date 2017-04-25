@@ -8,28 +8,24 @@ Demo site for my contrib modules
 - PHP <= 5.6
 
 ## Building
-This installation will install the site on a directory called drupal_demo.
+- Clone the repo into a folder
+- Build the site and run composer install/update
+`cd alo-physiotherapy; composer install;`
 
-- Copy and paste this into your shell to install everything:
-`curl -L -s https://goo.gl/1yuiCj | bash`
+## Install a fresh site
+`cd web/core`
+`drush si -y alo-physiotherapy --site-name="ALO Physiotherapy" --account-name=admin --account-pass=demo`
 
-- Go inside the distro folder
-`cd drupal_demo`
+## Generating artifacts
+`sudo /vagrant/repos/scripts/misc/generate_artifacts.sh alo-physiotherapy`
 
-- Build the site
-`sh scripts/build.sh [destination dir]`
-The destination dir defaults to ./web
-
-## Unassisted build
-`curl -L https://goo.gl/6WdRoF | bash`
-This script will automatically build the site on `drupal_demo` folder
-
-## Install the site
-`cd [destination dir]`
-`sh ../scripts/install.sh`
-ps: If you are using DevDesktop, it will configure the settings.php for you when you add a new site.
-All you have to do is run `drush si -y drupal_demo --site-name="Drupal demo" --account-name=admin --account-pass=demo`
-
-## Running tests
-
-`php scripts/run-tests.sh --color --concurrency "31" --directory profiles/modules/contrib --url "http://localhost" --verbose`
+## Deploying artifacts
+Copy to the server
+`scp /tmp/artifacts_alo-physiotherapy_20170425.tar.gz alophysi@alo-physiotherapy.co.uk:~/tmp`
+Now ssh into the server
+`ssh alophysi@alo-physiotherapy.co.uk`
+Move the zip file and unzip
+`mkdir deploy`
+`mv /tmp/artifacts_alo-physiotherapy_20170425.tar.gz ./deploy`
+`cd deploy`
+`tar -xvzf artifacts_alo-physiotherapy_20170425.tar.gz`
