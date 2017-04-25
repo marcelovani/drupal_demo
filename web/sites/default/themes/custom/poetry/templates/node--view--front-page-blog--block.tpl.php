@@ -1,4 +1,4 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <div class="six columns">
 	  <div class="recent_posts_wrap">
 	    <div class="recent_post_photo">
@@ -19,4 +19,3 @@
 	    </div>
 	  </div>  
 	</div>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

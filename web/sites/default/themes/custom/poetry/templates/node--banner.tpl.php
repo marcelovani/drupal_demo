@@ -80,7 +80,7 @@
  * @ingroup themeable
  */
 ?>
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <?php if (!$page): ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -97,4 +97,3 @@
 
 </div>
 <?php endif; ?>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

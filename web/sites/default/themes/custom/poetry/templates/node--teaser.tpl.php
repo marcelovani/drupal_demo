@@ -1,4 +1,4 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
     <?php print render($title_prefix); ?>
@@ -52,4 +52,3 @@
   <?php print render($content['comments']); ?>
 
 </article> <!-- /.node -->
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

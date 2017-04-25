@@ -1,4 +1,4 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <?php haiku_header($page);?>
       
 	<div id="heading_wrapper">
@@ -42,4 +42,3 @@
   	</div>
   </div>
 <?php haiku_footer($page);?>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

@@ -1,4 +1,4 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <div class="node practitioner card-container manual-flip">
   <div class="card">
     <div class="front">
@@ -22,4 +22,3 @@
     </div>
   </div>
 </div>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

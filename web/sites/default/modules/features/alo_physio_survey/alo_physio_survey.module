@@ -24,14 +24,13 @@ function alo_physio_survey_block_view($delta = '') {
   $block = array();
   switch ($delta) {
     case 'survey':
-      $content = '<style>
-				#sticky_feedback { 
-				    position: fixed; 
-				    top: 50%; 
-				    right: -30px; 
+      $css = '#sticky_feedback {
+				    position: fixed;
+				    top: 50%;
+				    right: -30px;
 				    margin: 0;
 				    width: 100px!important;
-				    height: 30px; 
+				    height: 30px;
 				    background-color: #ff090d;
 				    cursor: pointer;
 				    color: white;
@@ -49,17 +48,22 @@ function alo_physio_survey_block_view($delta = '') {
 				    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 				    z-index: 1000;
 				}
-				
+
 				#sticky_feedback a,
 				#sticky_feedback a:hover,
 				#sticky_feedback a:visited {
 				  color: white!important;
 				  text-decoration: none!important;
-				}
-				</style>
-				<div id="sticky_feedback"><a href="https://www.surveymonkey.com/s/T39THTF">Feedback</a></div>';
+				}';
 
-      $block['content'] = $content;
+      $block['content'] = array(
+        '#markup' => '<div id="sticky_feedback"><a href="https://www.surveymonkey.com/s/T39THTF">Feedback</a></div>',
+        '#attached' => array(
+          'css' => array(
+            drupal_get_path('module', 'alo_physio_survey') . '/css/alo_physio_survey.css',
+          ),
+        )
+      );
       break;
   }
   return $block;

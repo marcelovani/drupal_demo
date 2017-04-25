@@ -393,3 +393,52 @@ html body.admin-menu > #main_wrapper {
 .webform-client-form select {
     width: inherit;
 }
+
+/* Facts */
+#facts {
+  padding: 25px 0px;
+  margin-bottom: 2px;
+}
+
+#facts i {
+  font-size: 35px;
+  float: left;
+  margin: 8px 10px 0px 0px;
+  color: #222;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#facts i a {
+  color: #222;
+}
+
+.services_text {
+  text-align: center;
+}
+
+#facts h3 {
+  font-size: 20px;
+  margin: 8px 0px 10px 0px;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+
+#facts p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0px;
+}
+
+#facts .content {
+  margin-bottom: 0px;
+}
+
+#facts br {
+  display: none;
+}

@@ -1,4 +1,3 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
 <section id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 <div class="clearfix"></div>
   <?php if ($content['comments'] && $node->type != 'forum'): ?>
@@ -17,4 +16,3 @@
     <div class="bottom_spacer"></div>    
   <?php endif; ?>
 </section> <!-- /#comments -->
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

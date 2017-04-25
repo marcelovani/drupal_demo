@@ -28,10 +28,9 @@
  * @ingroup themeable
  */
 ?>
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <?php if ($content): ?>
 
     <?php print $content; ?>
 
 <?php endif; ?>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

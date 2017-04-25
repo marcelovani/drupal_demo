@@ -1,4 +1,4 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <div class="node recent-content">
   <div class="image">
     <?php if (isset($content['field_image'])): ?>
@@ -29,4 +29,3 @@
 </div>
 
 
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

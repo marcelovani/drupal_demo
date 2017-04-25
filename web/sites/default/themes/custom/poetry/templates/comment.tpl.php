@@ -1,4 +1,3 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
 <?php global $root;?>
 <article class="<?php print $classes . ' ' . $zebra; ?>"<?php print $attributes; ?>>
   <div class="comment_avatar">
@@ -35,4 +34,3 @@
    <div class="clearfix"></div>
 
 </article> <!-- /.comment -->
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

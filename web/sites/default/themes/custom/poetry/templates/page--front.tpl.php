@@ -1,4 +1,4 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <?php haiku_header($page); ?>
 
 <?php if (render($page['banner'])) : ?>
@@ -26,7 +26,7 @@
 <?php endif; ?>
 
 <?php if (theme_get_setting('enable_call_to_action') == '1') : ?>
-  <div id="information" class="row">
+  <div id="call-to-action" class="row">
     <?php print render($page['call_to_action']); ?>
   </div>
   <div class="row seperator">
@@ -37,12 +37,10 @@
 <?php endif; ?>
 
 <?php if (theme_get_setting('enable_facts') == '1') : ?>
-  <div id="services" class="row">
+  <div id="facts" class="row">
     <div class="twelve columns">
       <div class="region region-services">
-        <div id="facts" class="block block-block">
-
-
+        <div id="facts-block" class="block block-block">
           <div class="content">
             <div class="row">
               <div class="three columns services_wrap">
@@ -69,7 +67,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
   <div class="row seperator">
@@ -219,4 +216,3 @@
 <?php } ?>
 
 <?php haiku_footer($page); ?>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

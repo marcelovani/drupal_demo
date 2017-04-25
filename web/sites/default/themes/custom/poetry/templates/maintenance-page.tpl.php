@@ -6,7 +6,7 @@
   <?php print $scripts; ?>
   </head>
   <body>
-  <?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
   <div id="maintenance" class="container"><!-- Begin main container -->
     <div class="row">
       <div class="twelve columns">
@@ -31,5 +31,5 @@
     </div>
   </div> <!--/Container -->
   </body>
-  <?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+   ?>
 </html>

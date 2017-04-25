@@ -1,4 +1,4 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
   <div id="single_portfolio" class="row">
   <div class="eight columns">
     <div class="portfolio_image"><?php print render($content['field_portfolio_image']); ?></div>
@@ -35,4 +35,3 @@
   </div>
   </div>
   <div class="bottom_spacer"></div>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

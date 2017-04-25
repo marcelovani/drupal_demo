@@ -80,7 +80,7 @@
  * @ingroup themeable
  */
 ?>
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
@@ -117,4 +117,3 @@
   <?php print render($content['comments']); ?>
 
 </div>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

@@ -1,4 +1,4 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <div>
   <?php print (render($content)); ?>
 </div>
@@ -13,4 +13,3 @@
 	<a class="small button" href="/testimonials">read more</a>
   </div>
 <?php endif;?>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

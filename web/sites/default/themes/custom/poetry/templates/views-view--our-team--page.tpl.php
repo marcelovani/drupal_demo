@@ -26,7 +26,7 @@
 * @ingroup views_templates
 */
 ?>
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
@@ -88,4 +88,3 @@
   <?php endif; ?>
 
 </div><?php /* class view */ ?>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

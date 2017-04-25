@@ -1,4 +1,4 @@
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
+
 <?php
   $tags = render($content['field_portfolio_tags']);
   $tags = str_replace(' ', '/',$tags);
@@ -21,4 +21,3 @@
      <p><?php echo $tags;?></p>
    </div>  
   </div>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';

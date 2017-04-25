@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file field.tpl.php
  * Default template implementation to display the value of a field.
@@ -44,7 +43,6 @@
  * @ingroup themeable
  */
 ?>
-<?php echo '<!-- ' . str_replace('-', '\-', basename(__FILE__)) . ' -->'; ?>
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
     <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
@@ -55,4 +53,4 @@
     <?php endforeach; ?>
   </div>
 </div>
-<?php echo '<!-- /' . str_replace('-', '\-', basename(__FILE__)) . ' -->';
+
