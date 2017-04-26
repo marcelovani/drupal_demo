@@ -15,7 +15,6 @@ function alo_physio_taxonomy_user_default_permissions() {
     'name' => 'administer taxonomy',
     'roles' => array(
       'administrator' => 'administrator',
-      'publisher' => 'publisher',
     ),
     'module' => 'taxonomy',
   );

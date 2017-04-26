@@ -4,6 +4,7 @@ core = 7.x
 package = Features
 dependencies[] = alo_physio_ailments
 dependencies[] = alo_physio_articles
+dependencies[] = alo_physio_seo
 dependencies[] = context
 dependencies[] = features
 dependencies[] = hs_taxonomy
