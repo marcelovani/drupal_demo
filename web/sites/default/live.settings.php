@@ -5,7 +5,7 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'alophysi_alo-physiotherapy',
+      'database' => 'alophysi_alo-physio',
       'username' => 'alophysi_root',
       'password' => '(S@zMmMun9t_',
       'host' => 'localhost',

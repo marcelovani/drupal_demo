@@ -30,12 +30,12 @@
 
     <div id="sidebar_wrap" class="four columns">
       <?php if ($page['sidebar_first']): ?>
-      <aside id="sidebar-first" role="complementary" class="sidebar clearfix">
+      <aside id="sidebar-first" class="sidebar clearfix">
       <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
       <?php endif; ?>
       <?php if ($page['sidebar_second']): ?>
-      <aside id="sidebar-second" role="complementary" class="sidebar clearfix">
+      <aside id="sidebar-second" class="sidebar clearfix">
       <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-first -->
       <?php endif; ?>
