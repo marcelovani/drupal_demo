@@ -1,0 +1,31 @@
+#sticky_feedback {
+  position: fixed;
+  top: 50%;
+  right: -30px;
+  margin: 0;
+  width: 100px !important;
+  height: 30px;
+  background-color: #ff090d;
+  cursor: pointer;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 0 0 0;
+  border: 2px white dotted;
+  border-bottom: none;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  z-index: 1000;
+}
+
+#sticky_feedback a,
+#sticky_feedback a:hover,
+#sticky_feedback a:visited {
+  color: white !important;
+  text-decoration: none !important;
+}
