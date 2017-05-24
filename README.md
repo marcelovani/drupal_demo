@@ -14,7 +14,8 @@ Demo site for my contrib modules
 
 ## Install a fresh site
 `cd web/core`
-`drush si -y drupal_demo --site-name="Drupal Demo" --account-name=admin --account-pass=demo`
+`drush si -y standard --site-name="Drupal Demo" --account-name=admin --account-pass=demo`
+`drush en -y drupal_demo`
 
 ## Generating artifacts
 `sudo /vagrant/repos/scripts/misc/generate_artifacts.sh drupal_demo`
