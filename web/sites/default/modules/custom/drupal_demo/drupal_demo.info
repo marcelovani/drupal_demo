@@ -1,0 +1,57 @@
+; $Id $
+name = Drupal Demo
+description = Demo of my contrib modules
+core = 7.x
+
+; Core
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = syslog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+; Mine
+dependencies[] = sharerich
+dependencies[] = captcha_keypad
+dependencies[] = blocks_mass_cache
+dependencies[] = cache_purger
+dependencies[] = context_admin_exclude
+
+; Contrib
+dependencies[] = admin_menu
+dependencies[] = admin_devel
+dependencies[] = admin_menu_toolbar
+dependencies[] = module_filter
+dependencies[] = metatag
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = features_override
+dependencies[] = googleanalytics
+dependencies[] = nodequeue
+dependencies[] = omega_tools
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = views
+dependencies[] = views_content
+dependencies[] = views_ui
+dependencies[] = wysiwyg
+dependencies[] = xmlsitemap
+dependencies[] = libraries

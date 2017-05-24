@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Alo Physio Ailments feature.
- */
-
-include_once 'alo_physio_ailments.features.inc';

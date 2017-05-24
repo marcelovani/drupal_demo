@@ -1,12 +1,12 @@
 <?php
 // DB
 $databases = array (
-  'default' => 
+  'default' =>
   array (
-    'default' => 
+    'default' =>
     array (
 	    'driver' => 'mysql',
-	    'database' => 'alo_physio_upgrade',
+	    'database' => 'drupal_demo',
 	    'username' => 'drupaluser',
 	    'password' => '',
 	    'host' => '127.0.0.1',
@@ -21,7 +21,7 @@ $conf['show_memcache_statistics'] = 0;
 include_once('./includes/cache.inc');
 include_once('./sites/default/modules/contrib/memcache/memcache.inc');
 $conf['cache_default_class'] = 'MemCacheDrupal';
-$conf['memcache_key_prefix'] = 'alo-physio';
+$conf['memcache_key_prefix'] = 'drupal_dem';
 
 $conf['memcache_servers'] = array(
   '127.0.0.1:11211' => 'default',

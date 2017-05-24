@@ -1,2 +1,0 @@
-alias alo_physio_dev_db='drush sql-drop @alo-physio-dev -y; drush sql-sync @alo-physio-live @alo-physio-dev -y -v; createmv; drush updb --token=secret -y; drush vset maintenance_mode 0; drush cc all;'
-

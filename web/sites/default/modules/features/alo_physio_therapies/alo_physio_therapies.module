@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Alo Physio Therapies feature.
- */
-
-include_once 'alo_physio_therapies.features.inc';

@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Alo Physio Basic page feature.
- */
-
-include_once 'alo_physio_basic_page.features.inc';
