@@ -7,6 +7,7 @@ default:
         - Drupal\DrupalExtension\Context\DrushContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\DrupalContext
       filters:
          tags: '~@wip'
   extensions:
@@ -18,12 +19,19 @@ default:
       selenium2: ~
     Drupal\DrupalExtension:
       api_driver: 'drupal'
-      blackbox: ~
+      text:
+        password_field: "edit-pass"
+        username_field: "edit-name"
       drupal:
         drupal_root: '/vagrant/repos/sites/drupal7_demo/web/core'
+      blackbox: ~
       drush: ~
       drush:
         root: '/vagrant/repos/sites/drupal7_demo/web/core'
+      subcontexts:
+        paths:
+          - "/vagrant/repos/sites/drupal7_demo/tests"
+        autoload: 0
       region_map:
         content: ".region-content"
         header: ".region-header"
