@@ -1,0 +1,36 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\MarkupContext
+        - Drupal\DrupalExtension\Context\DrushContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\MinkContext
+      filters:
+         tags: '~@wip'
+  extensions:
+    Behat\MinkExtension:
+      base-url: 'http://drupal7_demo.dd:8083/'
+      files_path: '%paths.base%/features/files/'
+      goutte: ~
+      javascript_session: 'selenium2'
+      selenium2: ~
+    Drupal\DrupalExtension:
+      api_driver: 'drupal'
+      blackbox: ~
+      drupal:
+        drupal_root: '/vagrant/repos/sites/drupal7_demo/web/core'
+      drush: ~
+      drush:
+        root: '/vagrant/repos/sites/drupal7_demo/web/core'
+      region_map:
+        content: ".region-content"
+        header: ".region-header"
+        footer: ".region-footer"
+      selectors:
+        message_selector: '.messages'
+        error_message_selector: '.messages.messages--error'
+        success_message_selector: '.messages.messages--status'
+  formatters:
+    pretty: true
