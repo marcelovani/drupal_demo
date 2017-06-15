@@ -10,8 +10,6 @@ web/themes/custom/**/dist/js
 .sass-cache
 node_modules
 npm-debug.log
-phpunit.xml
-behat.yml
 
 # Core
 vendor

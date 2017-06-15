@@ -5,7 +5,7 @@ Feature: Table
   I want to use Table tests
 
   Scenario: Create content using table
-    Given "article" content:
+    Given article content:
       | title           | body      | path  |
       | Testing content | TEST BODY | /page |
 
