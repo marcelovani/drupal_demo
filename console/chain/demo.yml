@@ -1,0 +1,24 @@
+command:
+  name: demo
+  description: 'Installs drupal and modules'
+commands:
+  # Install Drupal
+  - command: exec
+    arguments:
+      bin: drupal site:install standard --db-type="sqlite" --no-interaction
+  # Enable modules
+  - command: module:install
+    arguments:
+      module: 
+      - sharerich
+      - captcha_keypad
+      - boxout
+      - config_token
+      - csv_to_config
+      - feedbackify
+      - config_update
+      - config_inspector
+  # Start PHP built-in server
+  - command: exec
+    arguments:
+      bin: drupal server
