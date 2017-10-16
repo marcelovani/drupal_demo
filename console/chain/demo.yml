@@ -5,7 +5,7 @@ commands:
   # Install Drupal
   - command: site:install
     arguments:
-      profile: standard
+      profile: minimal
     options:
       db-type: sqlite
       account-name: admin
@@ -27,8 +27,20 @@ commands:
   # Start PHP built-in server
   - command: exec
     arguments:
-      bin: drupal server &
+      bin: cd web; drupal server 127.0.0.1:8008 > /dev/null 2>/dev/null &
   # Run tests
   - command: exec
     arguments:
-      bin:  cd web && php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8088 --directory modules/contrib
+      bin: php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module sharerich
+  - command: exec
+    arguments:
+      bin: php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module captcha_keypad
+  - command: exec
+    arguments:
+      bin: php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module config_token
+  - command: exec
+    arguments:
+      bin: php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module boxout
+  - command: exec
+    arguments:
+      bin: ps aux | grep drupal

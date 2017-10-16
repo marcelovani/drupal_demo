@@ -41,3 +41,12 @@ $config_directories = array(
 ## Running tests
 
 `php core/scripts/run-tests.sh --color --concurrency "31" --directory modules/contrib --dburl mysql://drupaluser@127.0.0.1:33067/drupal8_demo --verbose`
+
+## Installation with Drupal console
+Build the site
+`composer install`
+
+Run server and tests
+`drupal demo`
+
+
