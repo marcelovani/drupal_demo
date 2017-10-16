@@ -23,6 +23,7 @@ commands:
       - feedbackify
       - config_update
       - config_inspector
+      - simpletest
   # Start PHP built-in server
   - command: exec
     arguments:
