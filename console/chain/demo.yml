@@ -8,6 +8,8 @@ commands:
       profile: standard
     options:
       db-type: sqlite
+      account-name: admin
+      account-pass: demo
       no-interaction: true
   # Enable modules
   - command: module:install
