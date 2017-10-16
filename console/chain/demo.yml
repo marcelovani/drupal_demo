@@ -27,4 +27,8 @@ commands:
   # Start PHP built-in server
   - command: exec
     arguments:
-      bin: drupal server
+      bin: drupal server &
+  # Run tests
+  - command: exec
+    arguments:
+      bin:  cd web && php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8088 --directory modules/contrib
