@@ -3,9 +3,12 @@ command:
   description: 'Installs drupal and modules'
 commands:
   # Install Drupal
-  - command: exec
+  - command: site:install
     arguments:
-      bin: drupal site:install standard --db-type="sqlite" --no-interaction
+      profile: standard
+    options:
+      db-type: sqlite
+      no-interaction: true
   # Enable modules
   - command: module:install
     arguments:
