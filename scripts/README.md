@@ -7,12 +7,12 @@ Will checkout the code
 Run `./scripts/bootstrap.sh`
 
 ## Autobuild
-Will build the make files, install and serve a Drupal site
+Will Checkout, build the make files, install and serve a Drupal site
 
 Run `./scripts/autobuild.sh`
 
 ## Build
-Will build the make files, install Drupal
+Will build the make files, install and serve a Drupal site
 
 Run `./scripts/build.sh`
 

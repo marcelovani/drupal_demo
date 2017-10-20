@@ -13,24 +13,31 @@ function f_install_drush() {
 }
 
 function f_build_site() {
-  echo "[INFO] Building Drupal:"
+  echo "[INFO] Building Drupal"
   /usr/local/drush/drush make --working-copy --prepare-install build-drupal_demo.make ${INSTALL_DIR}
   # Create symlinks used for testing
   cd ${INSTALL_DIR}/sites/all/modules
   ln -s ../../../profiles/drupal_demo/modules/contrib
   cd ../themes
   ln -s ../../../profiles/drupal_demo/themes/contrib
+  cd ../../../../
 }
 
 function f_install_site() {
-  cd ${INSTALL_DIR}/sites/default
-  echo "[INFO] Drupal installed. Make sure you have configured you vhost to point to the installation dir and run:"
-  echo "cd ${INSTALL_DIR}"
+  echo "[INFO] Installing Drupal"
+  cd ${INSTALL_DIR}
+  pwd
   echo "../scripts/install.sh"
+}
+
+function f_serve() {
+  echo "[INFO] Serving Drupal"
+  pwd; cd ${INSTALL_DIR}; php -S 127.0.0.1:8008
 }
 
 f_install_drush
 f_build_site
 f_install_site
+f_serve
 
 echo Done
