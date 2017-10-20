@@ -24,10 +24,10 @@ function f_build_site() {
 }
 
 function f_install_site() {
-  echo "[INFO] Installing Drupal"
   cd ${INSTALL_DIR}
   pwd
-  echo "../scripts/install.sh"
+  sh ../scripts/install.sh
+  cd ../
 }
 
 function f_serve() {
