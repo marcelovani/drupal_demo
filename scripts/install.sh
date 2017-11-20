@@ -16,10 +16,14 @@ function f_install_site() {
   drush en -y simpletest, sharerich, captcha_keypad, blocks_mass_cache, \
   cache_purger, context_admin_exclude, admin_menu, admin_devel, \
   admin_menu_toolbar, module_filter, metatag, context, ctools, \
-  entity, features, googleanalytics, nodequeue, pathauto, strongarm, \
+  entity, features, googleanalytics, nodequeue, strongarm, \
   token, views_content, views_ui, wysiwyg, xmlsitemap, libraries
 
   drush dis -y toolbar, overlay
+
+  # Amazon
+  drush en -y simpletest
+
 }
 
 f_install_site

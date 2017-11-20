@@ -16,13 +16,14 @@ function f_build_site() {
   echo "[INFO] Building Drupal"
   drush make --working-copy --prepare-install build-drupal_demo.make ${INSTALL_DIR}
   # Create symlinks used for testing
-  cd ${INSTALL_DIR}/sites/all/modules
-  ln -s ../../../profiles/drupal_demo/modules/contrib
-  cd ../themes
-  ln -s ../../../profiles/drupal_demo/themes/contrib
-  cd ../libraries
-  ln -s ../../../profiles/drupal_demo/libraries/contrib
-  cd ../../../../
+  cd ${INSTALL_DIR}/sites/all/
+  rm -rf modules
+  ln -s ../../profiles/drupal_demo/modules
+  rm -rf themes
+  ln -s ../../profiles/drupal_demo/themes
+  rm -rf libraries
+  ln -s ../../profiles/drupal_demo/libraries
+  cd ../../../
 }
 
 function f_install_site() {
