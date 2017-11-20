@@ -1,0 +1,37 @@
+# Copy this file to ~/.console/chain folder
+command:
+  name: d7demo
+  description: 'Installs drupal and modules'
+commands:
+  # Run make
+  - command: exec
+    arguments:
+      bin: drush make --working-copy --prepare-install build-drupal_demo.make
+  # Install Drupal
+  - command: exec
+    arguments:
+      bin: cd web/core; drush si minimal --db-url=sqlite://sites/default/files/.ht.sqlite --account-name=admin --account-pass=demo
+  # Enable modules
+  - command: exec
+    arguments:
+      bin: drush en -y sharerich captcha_keypad boxout simpletest
+  # Start PHP built-in server
+  - command: exec
+    arguments:
+      bin: cd web; drupal server 127.0.0.1:8008 > /dev/null 2>/dev/null &
+  # Run tests
+  - command: exec
+    arguments:
+      bin: php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module sharerich
+  - command: exec
+    arguments:
+      bin: php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module captcha_keypad
+  - command: exec
+    arguments:
+      bin: php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module config_token
+  - command: exec
+    arguments:
+      bin: php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module boxout
+  - command: exec
+    arguments:
+      bin: ps aux | grep drupal
