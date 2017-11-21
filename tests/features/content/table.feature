@@ -6,15 +6,9 @@ Feature: Table
 
   Scenario: Create content using table
     Given article content:
-      | title           | body      | path  |
-      | Testing content | TEST BODY | /page |
+      | title           | body      |
+      | Testing content | TEST BODY |
 
-    Given I am on "node/1"
-    And the response status code should be 200
-    Then print last response
-
-  @api @ttt
-  Scenario: Create content using table
     Given I am on "/"
-    And the response status code should be 200
-    Then print last response
+    And I should see "Testing content"
+    And I should see "TEST BODY"
