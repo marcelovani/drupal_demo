@@ -8,6 +8,11 @@
       "type": "composer",
       "url": "https://packages.drupal.org/7"
     },
+    "entity_reference_generator": {
+      "type": "vcs",
+      "url": "git@github.com:marcelovani/behat-drupal-entity-reference-generator.git",
+      "no-api": true
+    },
     "drupal": {
       "type": "package",
       "package": {
@@ -241,7 +246,9 @@
     "drupal/xmlsitemap": "^2.3",
     "lib/flexslider": "^2.6",
     "drupal/superfish": "^2.0",
-    "lib/superfish": "dev-1.x"
+    "lib/superfish": "dev-1.x",
+    "drupal/console": "~1.0",
+    "dennisdigital/entity_reference_generator": "dev-master"
   },
   "scripts": {
     "post-install-cmd": [
@@ -279,10 +286,6 @@
     }
   },
   "require-dev": {
-    "drupal/drupal-extension": "~3.2.0",
-    "drush/drush": "~9.0.0",
-    "behat/mink": "^1.7",
-    "behat/mink-goutte-driver": "~1.2.0",
-    "behat/mink-selenium2-driver": "dev-master#721cbbaf37f71434f6acb604dc3a17a6a9be0c4c"
+    "drush/drush": "~9.0.0"
   }
 }

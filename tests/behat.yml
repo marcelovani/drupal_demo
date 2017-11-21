@@ -1,18 +1,20 @@
 default:
+  calls:
+    error_reporting: 7 # value of E_ERROR | E_WARNING | E_PARSE
+  formatters:
+    progress: true
   suites:
     default:
       contexts:
         - FeatureContext
-        - Drupal\DrupalExtension\Context\MarkupContext
-        - Drupal\DrupalExtension\Context\DrushContext
-        - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\RawDrupalContext
       filters:
          tags: '~@wip'
   extensions:
     Behat\MinkExtension:
-      base-url: 'http://drupal7_demo.dd:8083/'
+      base-url: 'http://drupal7-composer.dd:8082'
       files_path: '%paths.base%/features/files/'
       goutte: ~
       javascript_session: 'selenium2'
@@ -23,14 +25,14 @@ default:
         password_field: "edit-pass"
         username_field: "edit-name"
       drupal:
-        drupal_root: '/vagrant/repos/sites/drupal7_demo/web/core'
+        drupal_root: '/xMarcello/Development/sites/drupal/drupal7_composer_demo/web/core'
       blackbox: ~
       drush: ~
       drush:
-        root: '/vagrant/repos/sites/drupal7_demo/web/core'
+        root: '/xMarcello/Development/sites/drupal/drupal7_composer_demo/web/core'
       subcontexts:
         paths:
-          - "/vagrant/repos/sites/drupal7_demo/tests"
+          - "/xMarcello/Development/sites/drupal/drupal7_composer_demo/tests"
         autoload: 0
       region_map:
         content: ".region-content"

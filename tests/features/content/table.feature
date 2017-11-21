@@ -12,3 +12,9 @@ Feature: Table
     Given I am on "node/1"
     And the response status code should be 200
     Then print last response
+
+  @api @ttt
+  Scenario: Create content using table
+    Given I am on "/"
+    And the response status code should be 200
+    Then print last response
