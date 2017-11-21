@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "97f6ac777ad5e41cc88fb0902934164b",
+    "content-hash": "dce432be8af56f121aa8fb58bc076ca4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -699,12 +699,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:marcelovani/behat-drupal-entity-reference-generator.git",
-                "reference": "c4fc011e1a01026aa2467f6624e4c7d4125e805e"
+                "reference": "28a2702c9584fa2345f4d8fafd7b41ddd74f75e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/marcelovani/behat-drupal-entity-reference-generator/zipball/c4fc011e1a01026aa2467f6624e4c7d4125e805e",
-                "reference": "c4fc011e1a01026aa2467f6624e4c7d4125e805e",
+                "url": "https://api.github.com/repos/marcelovani/behat-drupal-entity-reference-generator/zipball/28a2702c9584fa2345f4d8fafd7b41ddd74f75e1",
+                "reference": "28a2702c9584fa2345f4d8fafd7b41ddd74f75e1",
                 "shasum": ""
             },
             "require": {
@@ -722,8 +722,8 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Drupal\\EntityReferenceGenerator\\": "src/"
+                "psr-0": {
+                    "Drupal\\EntityReferenceGenerator": "src/"
                 }
             },
             "license": [
@@ -736,7 +736,7 @@
                 "content",
                 "entities"
             ],
-            "time": "2017-11-21 15:35:39"
+            "time": "2017-11-21 16:40:10"
         },
         {
             "name": "dflydev/dot-access-configuration",
@@ -6313,6 +6313,68 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "http://cgit.drupalcode.org/redirect"
+            }
+        },
+        {
+            "name": "drupal/references",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/references",
+                "reference": "7.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/references-7.x-2.2.zip",
+                "reference": "7.x-2.2",
+                "shasum": "4b5b207703c1016ab389c57bb39ae6d44b24b1bc"
+            },
+            "require": {
+                "drupal/drupal": "*"
+            },
+            "require-dev": {
+                "drupal/uuid": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.2",
+                    "datestamp": "1492586282",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Nick_vh",
+                    "homepage": "https://www.drupal.org/user/122682"
+                },
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
+                    "name": "Thomasdbcklr",
+                    "homepage": "https://www.drupal.org/user/2945061"
+                },
+                {
+                    "name": "nielsaers",
+                    "homepage": "https://www.drupal.org/user/752444"
+                }
+            ],
+            "description": "Defines common base features for the various reference field types.",
+            "homepage": "https://www.drupal.org/project/references",
+            "support": {
+                "source": "http://cgit.drupalcode.org/references"
             }
         },
         {

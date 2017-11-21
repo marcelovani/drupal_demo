@@ -13,6 +13,11 @@
       "url": "git@github.com:marcelovani/behat-drupal-entity-reference-generator.git",
       "no-api": true
     },
+    "behat_term_manager_extension": {
+      "type": "vcs",
+      "url": "git@github.com:dennisinteractive/behat_term_manager_extension.git",
+      "no-api": true
+    },
     "drupal": {
       "type": "package",
       "package": {
@@ -248,7 +253,8 @@
     "drupal/superfish": "^2.0",
     "lib/superfish": "dev-1.x",
     "drupal/console": "~1.0",
-    "dennisdigital/entity_reference_generator": "dev-master"
+    "dennisdigital/entity_reference_generator": "dev-master",
+    "drupal/references": "^2.2"
   },
   "scripts": {
     "post-install-cmd": [

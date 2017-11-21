@@ -10,6 +10,7 @@ default:
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\RawDrupalContext
+        - Drupal\EntityReferenceGenerator\Context\EntityReferenceGeneratorContext
       filters:
          tags: '~@wip'
   extensions:

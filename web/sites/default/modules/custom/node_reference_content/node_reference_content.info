@@ -1,0 +1,12 @@
+name = Node Reference Content
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = node_reference
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_related_artiles
+features[field_instance][] = node-test-body
+features[field_instance][] = node-test-field_related_artiles
+features[node][] = test
