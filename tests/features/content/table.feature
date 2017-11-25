@@ -54,18 +54,23 @@ Feature: Table
 
     And I should see "Testing content"
     And I should see "TEST BODY"
-    Then I should see the link "Tag1"
-    Then I should see the link "Tag2"
-    Then I should see the link "Tag3"
-    Then I should see the link "Art1"
-    Then I should see the link "Art2"
-#    Then the cache has been cleared
-#    Then the cache has been cleared
-#    Then the cache has been cleared
-#    Then the cache has been cleared
-#    Then the cache has been cleared
-#    Then the cache has been cleared
-#    Then the cache has been cleared
-#    Then the cache has been cleared
-#    Then the cache has been cleared
+
+    Then I should see "Tags:"
+    Then I should see the link "BDD Tag1"
+    Then I should see the link "BDD Tag2"
+    Then I should see the link "BDD Tag3"
+
+    Then I should see "Other articles:"
+    Then I should see "Art1"
+    Then I should see "Art2"
+
+    Then the cache has been cleared
+    Then the cache has been cleared
+    Then the cache has been cleared
+    Then the cache has been cleared
+    Then the cache has been cleared
+    Then the cache has been cleared
+    Then the cache has been cleared
+    Then the cache has been cleared
+    Then the cache has been cleared
     Then print last response
