@@ -54,8 +54,52 @@ function node_reference_content_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-test-field_related_artiles'.
-  $field_instances['node-test-field_related_artiles'] = array(
+  // Exported field_instance: 'node-test-field_other_articles'.
+  $field_instances['node-test-field_other_articles'] = array(
+    'bundle' => 'test',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_other_articles',
+    'label' => 'Other articles',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => -2,
+    ),
+  );
+
+  // Exported field_instance: 'node-test-field_related_articles'.
+  $field_instances['node-test-field_related_articles'] = array(
     'bundle' => 'test',
     'default_value' => NULL,
     'deleted' => 0,
@@ -76,8 +120,8 @@ function node_reference_content_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_related_artiles',
-    'label' => 'Related Artiles',
+    'field_name' => 'field_related_articles',
+    'label' => 'Related Articles',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -95,10 +139,52 @@ function node_reference_content_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-test-field_tags'.
+  $field_instances['node-test-field_tags'] = array(
+    'bundle' => 'test',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tags',
+    'label' => 'Tags',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 0,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Related Artiles');
+  t('Other articles');
+  t('Related Articles');
+  t('Tags');
 
   return $field_instances;
 }
