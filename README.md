@@ -14,18 +14,30 @@ Demo site for my contrib modules
 
 ## Install a fresh site
 `cd web/core`
-`drush si -y standard --site-name="Drupal Demo" --account-name=admin --account-pass=demo`
+`drush si -y standard --site-name="Drupal Demo" --db-url=sqlite://sites/default/files/.ht.sqlite --account-name=admin --account-pass=demo`
 `drush en -y drupal_demo`
+
+## Running the site
+`cd web; drupal server 127.0.0.1:8008 > /dev/null 2>/dev/null &`
+
+## Running PHP Unit tests
+`php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module sharerich`
+
+## Running BDD tests
+`cd tests`
+`./behat`
 
 ## Generating artifacts
 `sudo /vagrant/repos/scripts/misc/generate_artifacts.sh drupal_demo`
 
 ## Deploying artifacts
-Copy to the server
+- Copy to the server
 `scp /tmp/artifacts_drupal_demo_20170425.tar.gz alophysi@drupal_demo.co.uk:~/tmp`
-Now ssh into the server
+
+- Now ssh into the server
 `ssh alophysi@drupal_demo.co.uk`
-Move the zip file and unzip
+
+- Move the zip file and unzip
 `mkdir deploy`
 `mv /tmp/artifacts_drupal_demo_20170425.tar.gz ./deploy`
 `cd deploy`
