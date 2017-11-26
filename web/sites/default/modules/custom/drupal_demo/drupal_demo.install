@@ -16,4 +16,6 @@ function drupal_demo_install() {
   // Disable modules.
   module_disable(array('overlay'));
   module_disable(array('toolbar'));
+  module_enable(array('node_reference_content'));
+  module_enable(array('simpletest'));
 }
