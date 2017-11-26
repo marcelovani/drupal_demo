@@ -4,7 +4,7 @@ Demo site for my contrib modules
 ### Prerequisites
 
 - Git
-- Drush
+- Drush 7 `sudo git clone --branch 7.x-5.x http://git.drupal.org/project/drush.git /usr/local/drush`
 - PHP <= 5.6
 
 ## Building
@@ -18,10 +18,10 @@ Demo site for my contrib modules
 `drush en -y drupal_demo`
 
 ## Running the site
-`cd web; drupal server 127.0.0.1:8008 > /dev/null 2>/dev/null &`
+`cd web/core; drush rs 8008 > /dev/null 2>/dev/null &`
 
-## Running PHP Unit tests
-`php core/scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --module sharerich`
+## Running Simpletests
+`cd web/core; php scripts/run-tests.sh --color --concurrency "31" --url http://127.0.0.1:8008 --verbose --directory sites/default/modules/contrib`
 
 ## Running BDD tests
 `cd tests`

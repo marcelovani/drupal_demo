@@ -15,7 +15,7 @@ default:
          tags: '~@wip'
   extensions:
     Behat\MinkExtension:
-      base-url: 'http://drupal7-composer.dd:8082'
+      base-url: 'http://127.0.0.1:8008'
       files_path: '%paths.base%/features/files/'
       goutte: ~
       javascript_session: 'selenium2'
@@ -26,14 +26,14 @@ default:
         password_field: "edit-pass"
         username_field: "edit-name"
       drupal:
-        drupal_root: '/xMarcello/Development/sites/drupal/drupal7_composer_demo/web/core'
+        drupal_root: '/vagrant/repos/patches/drupal_demo/web/core'
       blackbox: ~
       drush: ~
       drush:
-        root: '/xMarcello/Development/sites/drupal/drupal7_composer_demo/web/core'
+        root: '/vagrant/repos/patches/drupal_demo/web/core'
       subcontexts:
         paths:
-          - "/xMarcello/Development/sites/drupal/drupal7_composer_demo/tests"
+          - "/vagrant/repos/patches/drupal_demo/tests"
         autoload: 0
       region_map:
         content: ".region-content"
