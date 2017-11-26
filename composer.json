@@ -304,6 +304,6 @@
     }
   },
   "require-dev": {
-    "drush/drush": "~9.0.0"
+    "drush/drush": "~7.0"
   }
 }
