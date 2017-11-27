@@ -266,7 +266,8 @@
     "drupal/drupal-extension": "dev-no_dependency",
     "drupal/drupal-driver": "dev-node_reference_handler",
     "dennisdigital/entity_reference_generator": "dev-master",
-    "drupal/references": "^2.2"
+    "drupal/references": "^2.2",
+    "integratedexperts/behat-screenshot": "^0.6.2"
   },
   "scripts": {
     "post-install-cmd": [
