@@ -18,9 +18,9 @@
       "url": "git@github.com:marcelovani/DrupalDriver.git",
       "no-api": true
     },
-    "entity_reference_generator": {
+    "behat-references-generator": {
       "type": "vcs",
-      "url": "git@github.com:marcelovani/behat-drupal-entity-reference-generator.git",
+      "url": "git@github.com:marcelovani/behat-references-generator.git",
       "no-api": true
     },
     "behat_term_manager_extension": {
@@ -265,7 +265,7 @@
     "drupal/console": "~1.0",
     "drupal/drupal-extension": "dev-no_dependency",
     "drupal/drupal-driver": "dev-node_reference_handler",
-    "dennisdigital/entity_reference_generator": "dev-master",
+    "dennisdigital/behat-references-generator": "dev-master",
     "drupal/references": "^2.2",
     "integratedexperts/behat-screenshot": "^0.6.2"
   },

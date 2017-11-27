@@ -1,6 +1,7 @@
 .DS_Store
 # Ignore configuration files that may contain sensitive information.
 sites/*/*settings*.php
+web/sites/default/settings.php
 
 # Ignore paths that contain generated content.
 cache/
@@ -8,6 +9,7 @@ files/
 sites/*/files
 sites/*/private
 .idea
+tests/screenshots
 
 # Ignore default text files
 .htaccess
