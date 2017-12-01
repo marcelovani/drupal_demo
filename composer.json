@@ -8,16 +8,6 @@
       "type": "composer",
       "url": "https://packages.drupal.org/7"
     },
-    "drupal-extension": {
-      "type": "vcs",
-      "url": "git@github.com:marcelovani/drupalextension.git",
-      "no-api": true
-    },
-    "drupal-driver": {
-      "type": "vcs",
-      "url": "git@github.com:marcelovani/DrupalDriver.git",
-      "no-api": true
-    },
     "behat-references-generator": {
       "type": "vcs",
       "url": "git@github.com:marcelovani/behat-references-generator.git",
@@ -263,11 +253,9 @@
     "drupal/superfish": "^2.0",
     "lib/superfish": "dev-1.x",
     "drupal/console": "~1.0",
-    "drupal/drupal-extension": "dev-no_dependency",
-    "drupal/drupal-driver": "dev-node_reference_handler",
-    "dennisdigital/behat-references-generator": "dev-master",
     "drupal/references": "^2.2",
-    "integratedexperts/behat-screenshot": "^0.6.2"
+    "integratedexperts/behat-screenshot": "^0.6.2",
+    "dennisdigital/behat-references-generator": "master-dev"
   },
   "scripts": {
     "post-install-cmd": [
