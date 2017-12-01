@@ -90,10 +90,10 @@ function node_reference_content_strongarm() {
           'weight' => '0',
         ),
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
       ),
       'display' => array(),
