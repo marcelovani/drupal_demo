@@ -10,7 +10,11 @@ default:
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\RawDrupalContext
-        - Drupal\ReferencesGenerator\Context\ReferencesGeneratorContext
+        - Drupal\ReferencesGenerator\Context\ReferencesGeneratorContext:
+          - field_mapping:
+            - Title: title
+            - Body: body
+            - See Related: field_see_related
         - IntegratedExperts\BehatScreenshotExtension\Context\ScreenshotContext
       filters:
          tags: '~@wip'
@@ -45,7 +49,7 @@ default:
         error_message_selector: '.messages.messages--error'
         success_message_selector: '.messages.messages--status'
     IntegratedExperts\BehatScreenshotExtension:
-      dir: %paths.base%/screenshots
+      dir: %paths.base%/../web/sites/default/files/screenshots
       fail: true
       purge: false
   formatters:
