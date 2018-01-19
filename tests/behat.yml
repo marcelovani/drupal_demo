@@ -12,19 +12,23 @@ default:
         - Drupal\DrupalExtension\Context\RawDrupalContext
         - Drupal\ReferencesGenerator\Context\ReferencesGeneratorContext:
           - field_mapping:
-            - Title: title
-            - Body: body
-            - See Related: field_see_related
-            - Related articles: field_related_articles
-            - Other Articles: field_other_articles
+              Title: title
+              Body: body
+              See Related: field_see_related
+              Related articles: field_related_articles
+              Other Articles: field_other_articles
+              Tags: field_tags
           - default_content:
-            - node:
-              - page:
-                - Title: Default page title
-                - Body: Default page body
-            - image:
-              - Credits: Default credits
-              - Alt Text: Default alt text
+              node:
+                test:
+                  title: Test page title
+                  body: Test page body
+                page:
+                  title: Behat page title
+                  body: Behat page body
+              image:
+                credits: Behat credits
+                alt_ext: Behat alt text
         - IntegratedExperts\BehatScreenshotExtension\Context\ScreenshotContext
       filters:
          tags: '~@wip'
