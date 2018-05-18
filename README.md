@@ -12,6 +12,9 @@ Demo site for my contrib modules
 - Build the site and run composer install/update
 `cd drupal_demo; composer install;`
 
+** PHP memory errors?
+`php -d "memory_limit=-1" /usr/local/bin/composer update`
+
 ## Install a fresh site
 `cd web/core`
 `drush si -y standard --site-name="Drupal Demo" --db-url=sqlite://sites/default/files/.ht.sqlite --account-name=admin --account-pass=demo`
