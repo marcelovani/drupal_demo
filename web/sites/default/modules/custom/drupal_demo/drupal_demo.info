@@ -41,6 +41,8 @@ dependencies[] = metatag
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = entity
+dependencies[] = entityreference
+
 dependencies[] = features
 dependencies[] = googleanalytics
 dependencies[] = nodequeue
