@@ -55,3 +55,5 @@
  */
 
 $sites['8082.drupal7-composer.dd'] = 'default';
+$sites['8083.drupal7-composer.dd'] = 'default';
+$sites['drupal.develop'] = 'default';
