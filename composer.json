@@ -255,7 +255,8 @@
     "drupal/console": "~1.0",
     "drupal/references": "^2.2",
     "integratedexperts/behat-screenshot": "^0.6.2",
-    "dennisdigital/behat-references-generator": "master-dev"
+    "dennisdigital/behat-references-generator": "master-dev",
+    "drupal/xhprof": "^1.0@beta"
   },
   "scripts": {
     "post-install-cmd": [
