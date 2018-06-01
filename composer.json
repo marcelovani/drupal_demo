@@ -261,5 +261,8 @@
         "web.config"
       ]
     }
+  },
+  "require-dev": {
+    "drupal/xhprof": "^1.0@beta"
   }
 }
