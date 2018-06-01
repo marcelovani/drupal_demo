@@ -18,19 +18,6 @@
       "url": "git@github.com:dennisinteractive/behat_term_manager_extension.git",
       "no-api": true
     },
-    "drupal": {
-      "type": "package",
-      "package": {
-        "name": "drupal/core",
-        "version": "7",
-        "type": "drupal-core",
-        "source": {
-          "url": "https://git.drupal.org/project/drupal.git",
-          "type": "git",
-          "reference": "7.x"
-        }
-      }
-    },
     "masonry": {
       "type": "package",
       "package": {
@@ -150,7 +137,7 @@
     }
   },
   "require": {
-    "drupal/core": "~7",
+    "drupal/drupal": "^7.0",
     "composer/installers": "^1.2",
     "drupal/sharerich": "^2.5",
     "drupal/acquia_marina": "^1.0@RC",
@@ -258,21 +245,18 @@
     "dennisdigital/behat-references-generator": "master-dev",
     "drupal/xhprof": "^1.0@beta"
   },
-  "scripts": {
-    "post-install-cmd": [
-      "@composer drupal-scaffold",
-      "rm -rf ./core; cd ./web/core; rm -rf sites; ln -s ../sites;"
-    ],
-    "post-update-cmd": [
-      "@composer drupal-scaffold",
-      "rm -rf ./core; cd ./web/core; rm -rf sites; ln -s ../sites;"
-    ],
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+  "scripts":{
+     "post-install-cmd":[
+        "chmod 0755 ./web/core; cd ./web/core; rm -rf sites; ln -s ../sites;"
+     ],
+     "post-update-cmd":[
+        "chmod 0755 ./web/core; cd ./web/core; rm -rf sites; ln -s ../sites;"
+     ]
   },
   "extra": {
     "installer-paths": {
       "web/core": [
-        "drupal/core"
+        "drupal/drupal"
       ],
       "web/profiles/contrib/{$name}": [
         "type:drupal-profile"
@@ -292,8 +276,5 @@
         "web.config"
       ]
     }
-  },
-  "require-dev": {
-    "drush/drush": "~7.0"
   }
 }
