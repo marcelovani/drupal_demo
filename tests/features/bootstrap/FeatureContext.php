@@ -7,4 +7,12 @@ use Behat\Behat\Context\SnippetAcceptingContext;
  */
 class FeatureContext implements SnippetAcceptingContext {
 
+  /**
+   * @Then I stop
+   */
+  public function iStop()
+  {
+    exit();
+  }
+
 }
