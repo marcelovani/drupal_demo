@@ -248,8 +248,7 @@
     "integratedexperts/behat-screenshot": "^0.6.2",
     "dennisdigital/behat-references-generator": "dev-master",
     "drupal/media": "^2.19",
-    "dennisdigital/behat-field-aliases": "dev-master",
-    "dennisdigital/behat-gtm": "dev-master"
+    "dennisdigital/behat-field-aliases": "dev-master"
   },
   "scripts":{
      "post-install-cmd":[

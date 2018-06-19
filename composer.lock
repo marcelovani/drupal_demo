@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9910f4b07c60fd0d48f94aeef5260c47",
+    "content-hash": "b397187197ca1a028c2cbd6ddab04c25",
     "packages": [
         {
             "name": "behat/behat",
@@ -671,36 +671,6 @@
                 "entities"
             ],
             "time": "2018-06-19 15:11:56"
-        },
-        {
-            "name": "dennisdigital/behat-gtm",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dennisinteractive/behat-gtm.git",
-                "reference": "37860ee060f0b2f8d7a5c444a68e583a11fb27a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dennisinteractive/behat-gtm/zipball/37860ee060f0b2f8d7a5c444a68e583a11fb27a9",
-                "reference": "37860ee060f0b2f8d7a5c444a68e583a11fb27a9",
-                "shasum": ""
-            },
-            "require": {
-                "behat/mink": "~1.5"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "DennisDigital\\Behat\\Gtm\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Gtm Context.",
-            "time": "2018-02-16 17:46:21"
         },
         {
             "name": "dennisdigital/behat-references-generator",
@@ -9511,7 +9481,6 @@
         "lib/superfish": 20,
         "dennisdigital/behat-references-generator": 20,
         "dennisdigital/behat-field-aliases": 20,
-        "dennisdigital/behat-gtm": 20,
         "drupal/xhprof": 10
     },
     "prefer-stable": true,

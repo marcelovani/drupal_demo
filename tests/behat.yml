@@ -13,11 +13,8 @@ default:
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\RawDrupalContext
-        - DennisDigital\Behat\Gtm\Context\GtmContext:
         - DennisDigital\Behat\FieldAliases\Context\FieldAliasesContext:
           - field_mapping:
-              Title: title
-              Body: body
               See Related: field_see_related
               Related articles: field_related_articles
               Other Articles: field_other_articles
