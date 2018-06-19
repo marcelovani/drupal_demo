@@ -637,12 +637,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:marcelovani/behat-references-generator.git",
+                "url": "git@github.com:dennisinteractive/behat-references-generator.git",
                 "reference": "15f3e4a5f2408f419889395406203c5ebaf24eda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/marcelovani/behat-references-generator/zipball/15f3e4a5f2408f419889395406203c5ebaf24eda",
+                "url": "https://api.github.com/repos/dennisinteractive/behat-references-generator/zipball/15f3e4a5f2408f419889395406203c5ebaf24eda",
                 "reference": "15f3e4a5f2408f419889395406203c5ebaf24eda",
                 "shasum": ""
             },

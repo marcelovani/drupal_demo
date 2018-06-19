@@ -10,7 +10,7 @@
     },
     "behat-references-generator": {
       "type": "vcs",
-      "url": "git@github.com:marcelovani/behat-references-generator.git",
+      "url": "git@github.com:dennisinteractive/behat-references-generator.git",
       "no-api": true
     },
     "behat_term_manager_extension": {
