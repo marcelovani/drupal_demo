@@ -13,7 +13,8 @@ default:
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\RawDrupalContext
-        - Drupal\ReferencesGenerator\Context\ReferencesGeneratorContext:
+        - DennisDigital\Behat\Gtm\Context\GtmContext:
+        - DennisDigital\Behat\FieldAliases\Context\FieldAliasesContext:
           - field_mapping:
               Title: title
               Body: body
@@ -26,6 +27,7 @@ default:
               Gallery Files: field_gallery_files
               Image title: field_file_image_title_text
               Image alt: field_file_image_alt_text
+        - Drupal\ReferencesGenerator\Context\ReferencesGeneratorContext:
           - default_content:
               node:
                 article:

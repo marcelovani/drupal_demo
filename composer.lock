@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c05cbffea23e699e2d8448cb4c9b7496",
+    "content-hash": "9910f4b07c60fd0d48f94aeef5260c47",
     "packages": [
         {
             "name": "behat/behat",
@@ -633,17 +633,87 @@
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
+            "name": "dennisdigital/behat-field-aliases",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:dennisinteractive/behat-field-aliases.git",
+                "reference": "2916ff52cb2a72f166bf284f40fa45d730f21ab9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dennisinteractive/behat-field-aliases/zipball/2916ff52cb2a72f166bf284f40fa45d730f21ab9",
+                "reference": "2916ff52cb2a72f166bf284f40fa45d730f21ab9",
+                "shasum": ""
+            },
+            "require": {
+                "behat/mink": "^1.7",
+                "drupal/drupal-driver": "~1.0",
+                "drupal/drupal-extension": "~3.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "behat-extension",
+            "autoload": {
+                "psr-4": {
+                    "DennisDigital\\Behat\\FieldAliases\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Provides support to use friendly field names that are human readable",
+            "homepage": "https://github.com/dennisinteractive/behat-field-aliases",
+            "keywords": [
+                "behat",
+                "content",
+                "entities"
+            ],
+            "time": "2018-06-19 15:11:56"
+        },
+        {
+            "name": "dennisdigital/behat-gtm",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dennisinteractive/behat-gtm.git",
+                "reference": "37860ee060f0b2f8d7a5c444a68e583a11fb27a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dennisinteractive/behat-gtm/zipball/37860ee060f0b2f8d7a5c444a68e583a11fb27a9",
+                "reference": "37860ee060f0b2f8d7a5c444a68e583a11fb27a9",
+                "shasum": ""
+            },
+            "require": {
+                "behat/mink": "~1.5"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "DennisDigital\\Behat\\Gtm\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Gtm Context.",
+            "time": "2018-02-16 17:46:21"
+        },
+        {
             "name": "dennisdigital/behat-references-generator",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@github.com:dennisinteractive/behat-references-generator.git",
-                "reference": "15f3e4a5f2408f419889395406203c5ebaf24eda"
+                "reference": "ec5f0e8756f09c39b168f6a2dc64def27575e7c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dennisinteractive/behat-references-generator/zipball/15f3e4a5f2408f419889395406203c5ebaf24eda",
-                "reference": "15f3e4a5f2408f419889395406203c5ebaf24eda",
+                "url": "https://api.github.com/repos/dennisinteractive/behat-references-generator/zipball/ec5f0e8756f09c39b168f6a2dc64def27575e7c6",
+                "reference": "ec5f0e8756f09c39b168f6a2dc64def27575e7c6",
                 "shasum": ""
             },
             "require": {
@@ -678,7 +748,7 @@
                 "content",
                 "entities"
             ],
-            "time": "2018-06-15 15:09:46"
+            "time": "2018-06-19 11:05:54"
         },
         {
             "name": "drupal/acquia_marina",
@@ -713,7 +783,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -741,6 +811,7 @@
                     "homepage": "https://www.drupal.org/user/47874"
                 }
             ],
+            "description": "<a href=\"http://www.acquia.com\">Acquia</a> Marina is a bright and colorful grid-based theme with point-and-click theming. Requires the <a href=\"http://drupal.org/project/fusion\">Fusion Core</a> base theme and the <a href=\"http://drupal.org/project/skinr\">Skinr</a> module. Created by <a href=\"http://www.topnotchthemes.com\">TopNotchThemes</a> and <a href=\"http://fusiondrupalthemes.com\">Fusion Drupal Themes</a>.",
             "homepage": "https://www.drupal.org/project/acquia_marina",
             "support": {
                 "source": "http://cgit.drupalcode.org/acquia_marina"
@@ -779,7 +850,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -834,7 +905,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -974,7 +1045,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1031,7 +1102,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1120,7 +1191,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1187,7 +1258,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1246,7 +1317,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1330,7 +1401,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1421,7 +1492,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1480,7 +1551,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1532,7 +1603,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1583,7 +1654,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1634,7 +1705,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1728,7 +1799,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1847,7 +1918,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2013,7 +2084,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2143,7 +2214,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2462,7 +2533,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2576,7 +2647,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2640,7 +2711,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2932,7 +3003,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3003,7 +3074,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3088,7 +3159,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3188,7 +3259,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3381,7 +3452,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3445,7 +3516,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3586,7 +3657,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3640,12 +3711,16 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "frob",
                     "homepage": "https://www.drupal.org/user/249517"
+                },
+                {
+                    "name": "krlucas",
+                    "homepage": "https://www.drupal.org/user/271780"
                 }
             ],
             "description": "Integrates with the Google Analytics module to provide enhanced event tracking.",
@@ -3680,7 +3755,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3732,7 +3807,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3785,7 +3860,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3846,7 +3921,7 @@
                 },
                 "drupal": {
                     "version": "7.x-1.24",
-                    "datestamp": "1524222484",
+                    "datestamp": "1524222656",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3984,7 +4059,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4040,7 +4115,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4103,7 +4178,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4155,7 +4230,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4219,7 +4294,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4349,7 +4424,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4361,6 +4436,7 @@
                     "homepage": "https://www.drupal.org/user/816270"
                 }
             ],
+            "description": "Theme with fixed size, multiple columns and regions.",
             "homepage": "https://www.drupal.org/project/kanji",
             "support": {
                 "source": "http://cgit.drupalcode.org/kanji"
@@ -4399,7 +4475,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4450,7 +4526,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4598,7 +4674,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4753,7 +4829,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4816,7 +4892,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4879,7 +4955,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4932,13 +5008,13 @@
                     "datestamp": "1458066248",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4956,6 +5032,10 @@
                 {
                     "name": "fubhy",
                     "homepage": "https://www.drupal.org/user/761344"
+                },
+                {
+                    "name": "nhaarish",
+                    "homepage": "https://www.drupal.org/user/3388728"
                 },
                 {
                     "name": "peter.draucbaher",
@@ -5076,7 +5156,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5132,7 +5212,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5234,7 +5314,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5297,7 +5377,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5317,6 +5397,7 @@
                     "homepage": "https://www.drupal.org/user/1012210"
                 }
             ],
+            "description": "A powerful base theme framework.",
             "homepage": "https://www.drupal.org/project/omega",
             "support": {
                 "source": "http://cgit.drupalcode.org/omega"
@@ -5356,7 +5437,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5404,7 +5485,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5463,7 +5544,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5520,7 +5601,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5609,7 +5690,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5673,7 +5754,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5732,7 +5813,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5815,7 +5896,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5868,13 +5949,13 @@
                     "datestamp": "1436393339",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5987,7 +6068,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6042,7 +6123,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6086,6 +6167,7 @@
                     "homepage": "https://www.drupal.org/user/264833"
                 }
             ],
+            "description": "Clean admin theme.",
             "homepage": "https://www.drupal.org/project/rubik",
             "support": {
                 "source": "http://cgit.drupalcode.org/rubik"
@@ -6124,7 +6206,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6244,7 +6326,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6254,6 +6336,10 @@
                 {
                     "name": "Jim.M",
                     "homepage": "https://www.drupal.org/user/41136"
+                },
+                {
+                    "name": "University of Colorado Boulder",
+                    "homepage": "https://www.drupal.org/user/3299791"
                 },
                 {
                     "name": "afinnarn",
@@ -6328,7 +6414,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6383,7 +6469,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6435,7 +6521,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6502,7 +6588,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6559,7 +6645,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6614,7 +6700,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6642,6 +6728,7 @@
                     "homepage": "https://www.drupal.org/user/264833"
                 }
             ],
+            "description": "Tao is a base theme that is all about going with the flow. It takes care of key reset and utility tasks so that sub-themes can get on with their job.",
             "homepage": "https://www.drupal.org/project/tao",
             "support": {
                 "source": "http://cgit.drupalcode.org/tao"
@@ -6681,7 +6768,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6740,12 +6827,16 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "NickWilde",
                     "homepage": "https://www.drupal.org/user/3094661"
+                },
+                {
+                    "name": "andrey.troeglazov",
+                    "homepage": "https://www.drupal.org/user/3145389"
                 },
                 {
                     "name": "dstol",
@@ -6795,7 +6886,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6926,7 +7017,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6999,7 +7090,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -7062,7 +7153,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -7130,7 +7221,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -7329,7 +7420,7 @@
                 },
                 "drupal": {
                     "version": "7.x-3.9",
-                    "datestamp": "1496893142",
+                    "datestamp": "1510983072",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7338,7 +7429,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -7393,7 +7484,7 @@
                 },
                 "drupal": {
                     "version": "7.x-4.17",
-                    "datestamp": "1524581885",
+                    "datestamp": "1525373073",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7537,7 +7628,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -7618,7 +7709,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -7713,7 +7804,7 @@
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -7743,6 +7834,10 @@
                 {
                     "name": "paulmckibben",
                     "homepage": "https://www.drupal.org/user/279003"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
                 },
                 {
                     "name": "tadityar",
@@ -8145,7 +8240,7 @@
                 "reference": "master"
             },
             "type": "drupal-library",
-            "time": "2017-02-08 18:28:50"
+            "time": "2018-05-15 15:18:51"
         },
         {
             "name": "lib/masonry",
@@ -9415,6 +9510,8 @@
         "drupal/seotools": 15,
         "lib/superfish": 20,
         "dennisdigital/behat-references-generator": 20,
+        "dennisdigital/behat-field-aliases": 20,
+        "dennisdigital/behat-gtm": 20,
         "drupal/xhprof": 10
     },
     "prefer-stable": true,

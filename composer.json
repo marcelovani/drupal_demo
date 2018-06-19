@@ -8,6 +8,11 @@
       "type": "composer",
       "url": "https://packages.drupal.org/7"
     },
+    "behat-field-aliases": {
+      "type": "vcs",
+      "url": "git@github.com:dennisinteractive/behat-field-aliases.git",
+      "no-api": true
+    },
     "behat-references-generator": {
       "type": "vcs",
       "url": "git@github.com:dennisinteractive/behat-references-generator.git",
@@ -242,7 +247,9 @@
     "drupal/references": "^2.2",
     "integratedexperts/behat-screenshot": "^0.6.2",
     "dennisdigital/behat-references-generator": "dev-master",
-    "drupal/media": "^2.19"
+    "drupal/media": "^2.19",
+    "dennisdigital/behat-field-aliases": "dev-master",
+    "dennisdigital/behat-gtm": "dev-master"
   },
   "scripts":{
      "post-install-cmd":[
