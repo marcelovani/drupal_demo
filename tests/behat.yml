@@ -5,6 +5,9 @@ default:
     progress: true
   suites:
     default:
+      filters:
+        tags: # Use "&& ~@tagname" to exclude more tags.
+          '~@exclude'
       contexts:
         - FeatureContext
         - Drupal\DrupalExtension\Context\MinkContext

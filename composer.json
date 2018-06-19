@@ -239,7 +239,6 @@
     "lib/flexslider": "^2.6",
     "drupal/superfish": "^2.0",
     "lib/superfish": "dev-1.x",
-    "drupal/console": "~1.0",
     "drupal/references": "^2.2",
     "integratedexperts/behat-screenshot": "^0.6.2",
     "dennisdigital/behat-references-generator": "dev-master",
