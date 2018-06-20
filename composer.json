@@ -13,6 +13,11 @@
       "url": "git@github.com:dennisinteractive/behat-field-aliases.git",
       "no-api": true
     },
+    "behat-default-content": {
+      "type": "vcs",
+      "url": "git@github.com:dennisinteractive/behat-default-content.git",
+      "no-api": true
+    },
     "behat-references-generator": {
       "type": "vcs",
       "url": "git@github.com:dennisinteractive/behat-references-generator.git",
@@ -245,10 +250,10 @@
     "drupal/superfish": "^2.0",
     "lib/superfish": "dev-1.x",
     "drupal/references": "^2.2",
-    "integratedexperts/behat-screenshot": "^0.6.2",
-    "dennisdigital/behat-references-generator": "dev-master",
     "drupal/media": "^2.19",
-    "dennisdigital/behat-field-aliases": "dev-master"
+    "integratedexperts/behat-screenshot": "^0.6.2",
+    "dennisdigital/behat-field-aliases": "dev-master",
+    "dennisdigital/behat-references-generator": "dev-master"
   },
   "scripts":{
      "post-install-cmd":[

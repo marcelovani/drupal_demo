@@ -24,6 +24,7 @@ default:
               Gallery Files: field_gallery_files
               Image title: field_file_image_title_text
               Image alt: field_file_image_alt_text
+#        - DennisDigital\Behat\DefaultContent\Context\DefaultContentContext:
         - Drupal\ReferencesGenerator\Context\ReferencesGeneratorContext:
           - default_content:
               node:

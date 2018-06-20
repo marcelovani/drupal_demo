@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b397187197ca1a028c2cbd6ddab04c25",
+    "content-hash": "97917a0eef38060137557c623997fe9c",
     "packages": [
         {
             "name": "behat/behat",
@@ -638,12 +638,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dennisinteractive/behat-field-aliases.git",
-                "reference": "2916ff52cb2a72f166bf284f40fa45d730f21ab9"
+                "reference": "c84b546f2cacd9fc2be44fe18b18b4f44b7ca7c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dennisinteractive/behat-field-aliases/zipball/2916ff52cb2a72f166bf284f40fa45d730f21ab9",
-                "reference": "2916ff52cb2a72f166bf284f40fa45d730f21ab9",
+                "url": "https://api.github.com/repos/dennisinteractive/behat-field-aliases/zipball/c84b546f2cacd9fc2be44fe18b18b4f44b7ca7c8",
+                "reference": "c84b546f2cacd9fc2be44fe18b18b4f44b7ca7c8",
                 "shasum": ""
             },
             "require": {
@@ -670,7 +670,7 @@
                 "content",
                 "entities"
             ],
-            "time": "2018-06-19 15:11:56"
+            "time": "2018-06-19 15:35:45"
         },
         {
             "name": "dennisdigital/behat-references-generator",
@@ -678,12 +678,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:dennisinteractive/behat-references-generator.git",
-                "reference": "ec5f0e8756f09c39b168f6a2dc64def27575e7c6"
+                "reference": "0052fa1640e35599a1b6238857216a27c345148a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dennisinteractive/behat-references-generator/zipball/ec5f0e8756f09c39b168f6a2dc64def27575e7c6",
-                "reference": "ec5f0e8756f09c39b168f6a2dc64def27575e7c6",
+                "url": "https://api.github.com/repos/dennisinteractive/behat-references-generator/zipball/0052fa1640e35599a1b6238857216a27c345148a",
+                "reference": "0052fa1640e35599a1b6238857216a27c345148a",
                 "shasum": ""
             },
             "require": {
@@ -695,11 +695,6 @@
                 "phpspec/phpspec": "~2.0"
             },
             "type": "behat-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "master-dev"
-                }
-            },
             "autoload": {
                 "files": [
                     "src/Drupal/Driver/Fields/Drupal7/NodereferenceHandler.php"
@@ -718,7 +713,7 @@
                 "content",
                 "entities"
             ],
-            "time": "2018-06-19 11:05:54"
+            "time": "2018-06-19 22:56:45"
         },
         {
             "name": "drupal/acquia_marina",
@@ -9479,8 +9474,8 @@
         "drupal/redirect": 5,
         "drupal/seotools": 15,
         "lib/superfish": 20,
-        "dennisdigital/behat-references-generator": 20,
         "dennisdigital/behat-field-aliases": 20,
+        "dennisdigital/behat-references-generator": 20,
         "drupal/xhprof": 10
     },
     "prefer-stable": true,
