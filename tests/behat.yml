@@ -7,11 +7,36 @@ default:
         - Drupal\DrupalExtension\Context\DrushContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\ReferencesGenerator\Context\ReferencesGeneratorContext:
+          - field_mapping:
+              Title: title
+              Body: body
+              See Related: field_see_related
+              Related articles: field_related_articles
+              Other Articles: field_other_articles
+              Tags: field_tags
+              Image: field_image
+              Primary Image: field_primary_image
+              Image title: field_file_image_title_text
+              Image alt: field_file_image_alt_text
+          - default_content:
+              node:
+                article:
+                  title: Article title from yml
+                  body: Article body from yml
+                  field_image: article_image.jpg
+                test:
+                  title: Test title from yml
+                  body: Test body from yml
+                  field_tags: Tag1, Tag2
+              image:
+                field_file_image_title_text: Default image title
+                field_file_image_alt_text: Default image alt text
       filters:
          tags: '~@wip'
   extensions:
     Behat\MinkExtension:
-      base-url: 'http://drupal8_demo.dd:8083/'
+      base-url: 'http://drupal8-demo.dd:8083/'
       files_path: '%paths.base%/features/files/'
       goutte: ~
       javascript_session: 'selenium2'
@@ -22,14 +47,14 @@ default:
         password_field: "edit-pass"
         username_field: "edit-name"
       drupal:
-        drupal_root: '/vagrant/repos/sites/drupal8_demo/web'
+        drupal_root: '/xMarcello/Development/sites/drupal/drupal8_demo/web'
       blackbox: ~
       drush: ~
       drush:
-        root: '/vagrant/repos/sites/drupal8_demo/web'
+        root: '/xMarcello/Development/sites/drupal/drupal8_demo/web'
       subcontexts:
         paths:
-          - "/vagrant/repos/sites/drupal8_demo/tests"
+          - "/xMarcello/Development/sites/drupal/drupal8_demo/tests"
         autoload: 0
       region_map:
         content: ".region-content"
