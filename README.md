@@ -5,7 +5,7 @@ Demo site for my contrib modules
 
 - Go into the root and run:
 
-`php -d memory_limit=-1 php -d memory_limit=-1 /usr/local/bin/composer install`
+`php -d memory_limit=-1 /usr/local/bin/composer install`
 
 - Now, add the site to vhosts or add a new site in DevDesktop
 
@@ -57,7 +57,7 @@ drupal config:import
 
 ## Installation with Drupal console
 Build the site
-`php -d memory_limit=-1 php -d memory_limit=-1 /usr/local/bin/composer update `
+`php -d memory_limit=-1 /usr/local/bin/composer update `
 
 Run server and tests
 `drupal demo`
