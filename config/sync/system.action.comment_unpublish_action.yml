@@ -1,4 +1,4 @@
-uuid: 5a3f0b96-dcf7-49db-b407-7bd8cc21fc6d
+uuid: e9966952-d605-43fc-9414-59fbf9a8d859
 langcode: en
 status: true
 dependencies:
@@ -9,5 +9,5 @@ _core:
 id: comment_unpublish_action
 label: 'Unpublish comment'
 type: comment
-plugin: comment_unpublish_action
+plugin: 'entity:unpublish_action:comment'
 configuration: {  }

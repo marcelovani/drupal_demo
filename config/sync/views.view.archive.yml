@@ -1,4 +1,4 @@
-uuid: c9a3648f-0314-4400-8be2-f879af26e573
+uuid: 7e21adba-0414-498c-b2cc-69c567e168ac
 langcode: en
 status: false
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: Ea3cxQo9FjYVScZDVackg-6ID_GgTkdKORm_APgV-5I
+  default_config_hash: SRH1EhxAiIRj01P9xYv0h_LfIfWxjll0Yq-eDfjziFI
 id: archive
 label: Archive
 module: node
@@ -109,7 +109,7 @@ display:
           id: status
           table: node_field_data
           field: status
-          value: true
+          value: '1'
           group: 0
           expose:
             operator: '0'
