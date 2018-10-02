@@ -5,6 +5,7 @@
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
   "prefer-stable": true,
+	"homepage": "https://github.com/marcelovani/drupal_demo",
   "repositories": [
     {
       "type": "composer",
@@ -15,9 +16,8 @@
       "url": "https://packagist.org"
     },
     {
-      "type": "vcs",
-      "url": "git@github.com:dennisinteractive/behat-references-generator.git",
-      "no-api": true
+      "type": "git",
+      "url": "git@git.drupal.org:sandbox/marcelovani-3003231"
     }
   ],
   "scripts": {
@@ -75,6 +75,6 @@
     "drupal/adminimal_theme": "~1.3.0",
     "drupal/adminimal_admin_toolbar": "~1.3.0",
     "drupal/admin_toolbar": "~1.18.0",
-    "dennisdigital/behat-references-generator": "dev-master"
+    "drupal/config_pr": "dev-8.x-1.x"
   }
 }
