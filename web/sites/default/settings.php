@@ -297,7 +297,7 @@ $config_directories = array(
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'P4JmbyrRLGGShdJYFx3O7f5JH2nymWv1n8CLtFm9g4v23_MxjBJuM4Iw9F6SXFi0jxoLfBtD7A';
 
 /**
  * Deployment identifier.
@@ -785,7 +785,18 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }echo $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'];exit;
+$databases['default']['default'] = array (
+  'database' => 'drupal_1538583751',
+  'username' => 'root',
+  'password' => '',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
 if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_drupal8_demo_dd.inc')) {
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_drupal8_demo_dd.inc';
 }
 $settings['install_profile'] = 'standard';
+
