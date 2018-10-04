@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_config_pr_auth_token
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -30,5 +29,4 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
-hidden:
-  field_config_pr_auth_token: true
+hidden: {  }
