@@ -26,5 +26,4 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
-  field_config_pr_auth_token: true
   member_for: true
