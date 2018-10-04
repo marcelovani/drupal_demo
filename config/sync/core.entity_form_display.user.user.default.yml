@@ -28,12 +28,13 @@ content:
     third_party_settings: {  }
   field_config_pr_auth_token:
     weight: 0
+    type: string_textfield
+    label: above
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
+    third_party_settings: {  }
   language:
     weight: 3
     region: content
