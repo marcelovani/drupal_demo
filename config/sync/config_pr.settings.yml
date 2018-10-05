@@ -1,3 +1,12 @@
 repo:
   username: marcelovani
   name: drupal_demo
+  provider: config_pr.foo.provider1
+  controller: config_pr.repo_controller.github
+  repo_user: marcelovani
+  repo_name: drupal_demo
+commit_messages:
+  update: 'Updated config @config_name.yml'
+  create: 'Created config @config_name.yml'
+  delete: 'Deleted config @config_name.yml'
+  rename: 'Renamed config from @config_name.yml'
