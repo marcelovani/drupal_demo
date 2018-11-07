@@ -784,7 +784,8 @@ $settings['entity_update_batch_size'] = 50;
 # 
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
-# }echo $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'];exit;
+# }
+//echo $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'];exit;
 if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_drupal8_demo_dd.inc')) {
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_drupal8_demo_dd.inc';
 }

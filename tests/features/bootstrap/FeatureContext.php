@@ -73,14 +73,6 @@ class FeatureContext extends DrupalContext implements SnippetAcceptingContext
   }
 
   /**
-   * @Given I wait :arg1 seconds
-   */
-  public function iWaitSeconds($arg1)
-  {
-    $this->getSession()->wait($arg1);
-  }
-
-  /**
    * Wait until the id="updateprogress" element is gone,
    * or timeout after 30 seconds.
    *
