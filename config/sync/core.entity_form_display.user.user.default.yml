@@ -1,9 +1,8 @@
-uuid: 88ae15d7-3744-47da-bf52-03266fa7c137
+uuid: 14051c02-7009-40a4-84a8-f1a5e6ff0592
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_config_pr_auth_token
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -17,39 +16,23 @@ bundle: user
 mode: default
 content:
   account:
-    weight: 1
+    weight: -10
     region: content
-    settings: {  }
-    third_party_settings: {  }
   contact:
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_config_pr_auth_token:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  language:
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  timezone:
     weight: 5
     region: content
-    settings: {  }
-    third_party_settings: {  }
+  language:
+    weight: 0
+    region: content
+  timezone:
+    weight: 6
+    region: content
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 2
+    weight: -1
     region: content
 hidden: {  }

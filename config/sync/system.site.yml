@@ -1,7 +1,7 @@
-uuid: a2fbee06-c98e-4525-9a46-20d1fb4fa576
-name: 'Demo Site'
-mail: a@b.coma
-slogan: 'Testing Config Pr'
+uuid: 73a9be7a-6510-4148-a0c6-f3a4782ef04e
+name: 'Drupal 8'
+mail: admin@example.org
+slogan: ''
 page:
   403: ''
   404: ''
@@ -11,4 +11,4 @@ weight_select_max: 100
 langcode: en
 default_langcode: en
 _core:
-  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
