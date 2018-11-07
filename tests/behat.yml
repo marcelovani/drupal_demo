@@ -7,34 +7,41 @@ default:
         - Drupal\DrupalExtension\Context\DrushContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\MinkContext
-        - Drupal\ReferencesGenerator\Context\ReferencesGeneratorContext:
-          - field_mapping:
-              Title: title
-              Body: body
-              See Related: field_see_related
-              Related articles: field_related_articles
-              Other Articles: field_other_articles
-              Tags: field_tags
-              Image: field_image
-              Primary Image: field_primary_image
-              Image title: field_file_image_title_text
-              Image alt: field_file_image_alt_text
-          - default_content:
-              node:
-                article:
-                  title: Article title from yml
-                  body: Article body from yml
-                  field_image: article_image.jpg
-                test:
-                  title: Test title from yml
-                  body: Test body from yml
-                  field_tags: Tag1, Tag2
-              image:
-                field_file_image_title_text: Default image title
-                field_file_image_alt_text: Default image alt text
+        - IntegratedExperts\BehatScreenshotExtension\Context\ScreenshotContext
+        - DennisDigital\Behat\Drupal\ReferencesGenerator\Context\ReferencesGeneratorContext:
+            parameters:
+              field_mapping:
+                Title: title
+                Related articles: field_test_related_articles
+                Other Articles: field_test_other_articles
+                Tags: field_test_tags
+                Image: field_test_image
+                Image title: field_file_image_title_text
+                Image alt: field_file_image_alt_text
+              default_content:
+                node:
+                  article:
+                    title: "Article title from yml"
+                  test:
+                    title: "Test title from yml"
+                    field_test_body: "Test body from yml"
+                    field_test_tags: "Test Tag 1 from yml, Test Tag 2 from yml"
+                    field_test_related_articles: "Art 1 from yml, Art 2 from yml"
+                    field_test_image: "Image_from_yml.jpg"
+                    #@todo field_test_media: Media_from_yml.jpg
+                taxonomy_term:
+                  tags:
+                    name: "Tag from yml"
+                image:
+                  field_file_image_title_text: "Image title from yml"
+                  field_file_image_alt_text: "Image alt text from yml"
       filters:
          tags: '~@wip'
   extensions:
+    IntegratedExperts\BehatScreenshotExtension:
+      dir: %paths.base%/../web/sites/default/files/screenshots
+      fail: true
+      purge: false
     Behat\MinkExtension:
       base-url: 'http://drupal8-demo.dd:8083/'
       files_path: '%paths.base%/features/files/'
