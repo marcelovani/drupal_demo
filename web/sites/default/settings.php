@@ -781,22 +781,11 @@ $settings['entity_update_batch_size'] = 50;
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# 
+#
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }echo $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'];exit;
-$databases['default']['default'] = array (
-  'database' => 'drupal_1538583751',
-  'username' => 'root',
-  'password' => '',
-  'prefix' => '',
-  'host' => '127.0.0.1',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
 if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_drupal8_demo_dd.inc')) {
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_drupal8_demo_dd.inc';
 }
 $settings['install_profile'] = 'standard';
-

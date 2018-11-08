@@ -30,8 +30,9 @@ default:
                     field_test_image: "Image_from_yml.jpg"
                     #@todo field_test_media: Media_from_yml.jpg
                 taxonomy_term:
-                  tags:
+                  test_tags:
                     name: "Tag from yml"
+                    field_test_image: "Tag_image_from_yml.jpg"
                 image:
                   field_file_image_title_text: "Image title from yml"
                   field_file_image_alt_text: "Image alt text from yml"
@@ -46,6 +47,9 @@ default:
       base-url: 'http://drupal8-demo.dd:8083/'
       files_path: '%paths.base%/features/files/'
       goutte: ~
+      goutte:
+        guzzle_parameters:
+          verify: false
       javascript_session: 'selenium2'
       selenium2: ~
     Drupal\DrupalExtension:
