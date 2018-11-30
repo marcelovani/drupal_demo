@@ -28,6 +28,16 @@
       "url": "git@github.com:dennisinteractive/behat_term_manager_extension.git",
       "no-api": true
     },
+    "amp": {
+      "type": "vcs",
+      "url": "git@github.com:dennisinteractive/amp.git",
+      "no-api": true
+    },
+    "lullabot-amp": {
+      "type": "vcs",
+      "url": "git@github.com:dennisinteractive/amp-library.git",
+      "no-api": true
+    },
     "masonry": {
       "type": "package",
       "package": {
@@ -254,9 +264,10 @@
     "integratedexperts/behat-screenshot": "^0.6.2",
     "dennisdigital/behat-field-aliases": "dev-master",
     "dennisdigital/behat-references-generator": "dev-master",
-    "drupal/amp": "^1.1",
     "drupal/amptheme": "^1.0",
-    "marcelovani/amp-sanitizer": "dev-master"
+    "drupal/amp": "dev-amp-sanitizer",
+    "marcelovani/amp-sanitizer": "dev-master",
+    "lullabot/amp": "dev-amp-sanitizer"
   },
   "scripts":{
      "post-install-cmd":[
