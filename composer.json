@@ -267,7 +267,8 @@
     "drupal/amptheme": "^1.0",
     "drupal/amp": "dev-amp-sanitizer",
     "marcelovani/amp-sanitizer": "dev-master",
-    "lullabot/amp": "dev-amp-sanitizer"
+    "lullabot/amp": "dev-amp-sanitizer",
+    "drupal/dfp": "^1.5"
   },
   "scripts":{
      "post-install-cmd":[
