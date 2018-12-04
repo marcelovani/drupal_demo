@@ -268,7 +268,8 @@
     "drupal/amp": "dev-amp-sanitizer",
     "marcelovani/amp-sanitizer": "dev-master",
     "lullabot/amp": "dev-amp-sanitizer",
-    "drupal/dfp": "^1.5"
+    "drupal/dfp": "^1.5",
+    "masterminds/html5": "^2.4"
   },
   "scripts":{
      "post-install-cmd":[
