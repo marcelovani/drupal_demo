@@ -266,7 +266,6 @@
     "dennisdigital/behat-references-generator": "dev-master",
     "drupal/amptheme": "^1.0",
     "drupal/amp": "dev-amp-sanitizer",
-    "lullabot/amp": "dev-amp-sanitizer-wp",
     "drupal/dfp": "^1.5",
     "masterminds/html5": "^2.4"
   },
