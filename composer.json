@@ -265,9 +265,10 @@
     "dennisdigital/behat-field-aliases": "dev-master",
     "dennisdigital/behat-references-generator": "dev-master",
     "drupal/amptheme": "^1.0",
-    "drupal/amp": "dev-amp-sanitizer",
     "drupal/dfp": "^1.5",
-    "masterminds/html5": "^2.4"
+    "masterminds/html5": "^2.4",
+    "lullabot/amp": "dev-amphtml-generator",
+    "drupal/amp": "dev-amp-library"
   },
   "scripts":{
      "post-install-cmd":[
