@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c53b23b0aa1bebb8af1834992ea3adce",
+    "content-hash": "6b5eecc63fd57ca8c57fe88f8b4a18a8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1233,7 +1233,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/adstxt",
-                "reference": "3995014b6d7b8173493937f92da5df899683c3d8"
+                "reference": "91e769a443001cae3b53899941a0307f08c4320b"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1244,8 +1244,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1545235980",
+                    "version": "8.x-1.0-beta2+0-dev",
+                    "datestamp": "1549883280",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1254,7 +1254,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -1277,9 +1277,10 @@
             "description": "Generates the ads.txt file dynamically and gives you the chance to edit it, on a per-site basis, from the web UI.",
             "homepage": "https://www.drupal.org/project/adstxt",
             "support": {
-                "source": "http://cgit.drupalcode.org/adstxt"
+                "source": "http://git.drupal.org/project/adstxt.git",
+                "issues": "https://www.drupal.org/project/issues/adstxt"
             },
-            "time": "2018-12-19 16:06:05"
+            "time": "2019-02-11 11:05:01"
         },
         {
             "name": "drupal/amazon",
@@ -1603,15 +1604,22 @@
         },
         {
             "name": "drupal/config_pr",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/config_pr",
-                "reference": "d1957ddc7d30c6e50e6c18c3d15ede0fc3f93a14"
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_pr-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "c98f2706c73fb8d8c4cc68a7c9921aa3b59faa94"
             },
             "require": {
                 "drupal/core": "~8.5",
                 "knplabs/github-api": "^2.10",
+                "m4tthumphrey/php-gitlab-api": "^9.10",
                 "php": ">=7.0.0",
                 "php-http/guzzle6-adapter": "^1.1"
             },
@@ -1621,11 +1629,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3+11-dev",
-                    "datestamp": "1540836180",
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1540561680",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -1641,23 +1649,10 @@
             ],
             "description": "Allows administrators to issue pull requests of configuration changed.",
             "homepage": "https://www.drupal.org/project/config_pr",
-            "keywords": [
-                "config",
-                "developer",
-                "drupal",
-                "export",
-                "git",
-                "gitlab",
-                "module",
-                "pull request",
-                "repo",
-                "site builders"
-            ],
             "support": {
                 "source": "http://cgit.drupalcode.org/config_pr",
                 "issues": "https://www.drupal.org/project/issues/config_pr"
-            },
-            "time": "2018-10-31 16:33:57"
+            }
         },
         {
             "name": "drupal/config_token",
@@ -1797,12 +1792,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "9b1e11dcc0b6e29d4359a30620f0944da9f2b6a9"
+                "reference": "6dd2c427e0ddb17a7b4e38b3ae044732ae8bb60c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/9b1e11dcc0b6e29d4359a30620f0944da9f2b6a9",
-                "reference": "9b1e11dcc0b6e29d4359a30620f0944da9f2b6a9",
+                "url": "https://api.github.com/repos/drupal/core/zipball/6dd2c427e0ddb17a7b4e38b3ae044732ae8bb60c",
+                "reference": "6dd2c427e0ddb17a7b4e38b3ae044732ae8bb60c",
                 "shasum": ""
             },
             "require": {
@@ -2030,7 +2025,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-02-11 10:45:08"
+            "time": "2019-02-11 15:11:56"
         },
         {
             "name": "drupal/csv_to_config",
@@ -9829,7 +9824,6 @@
         "drupal/admin_menu": 20,
         "drupal/amazon": 20,
         "drupal/colorbox": 20,
-        "drupal/config_pr": 20,
         "drupal/core": 20,
         "drupal/ctools": 20,
         "drupal/token": 20,
